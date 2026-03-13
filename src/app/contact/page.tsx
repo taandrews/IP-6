@@ -34,30 +34,19 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
     setError("");
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+    const { firstName, lastName, email, phone, subject, message } = formData;
+    const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone || "N/A"}\n\n${message}`;
+    const mailto = `mailto:research@ip-6.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
 
-      if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.error || "Something went wrong");
-      }
-
-      setSubmitted(true);
-      setFormData(initialFormData);
-    } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : "Failed to send message");
-    } finally {
-      setSubmitting(false);
-    }
+    setSubmitted(true);
+    setFormData(initialFormData);
+    setSubmitting(false);
   };
 
   const inputClasses =
