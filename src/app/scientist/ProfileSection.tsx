@@ -38,7 +38,7 @@ export function ProfileSection() {
             {/* Davidge Hall, University of Maryland (Wikimedia Commons, CC BY-SA 4.0, Acroterion) */}
             <div className="hidden md:block">
               <Image
-                src="/images/davidge-hall.jpg"
+                src="/IP-6/images/davidge-hall.jpg"
                 alt="Davidge Hall, University of Maryland School of Medicine"
                 width={300}
                 height={400}

@@ -100,7 +100,7 @@ export default function HomePage() {
             {/* IP6 molecule — 3D ball-and-stick model (Wikimedia Commons, CC0) */}
             <div className="hidden lg:block">
               <Image
-                src="/images/ip6-molecule.png"
+                src="/IP-6/images/ip6-molecule.png"
                 alt="3D ball-and-stick model of the IP6 (phytic acid) molecule"
                 width={320}
                 height={320}
@@ -152,7 +152,7 @@ export default function HomePage() {
           {/* Rice bran — natural source of IP6 (Wikimedia Commons, CC BY-SA 3.0, Palagiri) */}
           <div className="hidden lg:block">
             <Image
-              src="/images/rice-bran.jpg"
+              src="/IP-6/images/rice-bran.jpg"
               alt="Rice bran, the primary natural source of IP6"
               width={280}
               height={210}

@@ -72,7 +72,7 @@ export default function AboutPage() {
           <div className="mt-12 grid items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div>
               <Image
-                src="/images/phytic-acid-structure.svg"
+                src="/IP-6/images/phytic-acid-structure.svg"
                 alt="Chemical structure of phytic acid (IP6)"
                 width={200}
                 height={160}
@@ -84,7 +84,7 @@ export default function AboutPage() {
             </div>
             <div>
               <Image
-                src="/images/inositol-structure.svg"
+                src="/IP-6/images/inositol-structure.svg"
                 alt="Chemical structure of myo-inositol"
                 width={200}
                 height={160}
@@ -96,7 +96,7 @@ export default function AboutPage() {
             </div>
             <div className="hidden lg:block">
               <Image
-                src="/images/rice-bran.jpg"
+                src="/IP-6/images/rice-bran.jpg"
                 alt="Rice bran, the primary natural source of IP6"
                 width={300}
                 height={200}

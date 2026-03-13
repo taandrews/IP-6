@@ -31,7 +31,7 @@ export default function SciencePage() {
             {/* Phytic acid 2D structure (Wikimedia Commons, Public Domain) */}
             <div className="hidden lg:block">
               <Image
-                src="/images/phytic-acid-structure.svg"
+                src="/IP-6/images/phytic-acid-structure.svg"
                 alt="Chemical structure of phytic acid (IP6)"
                 width={200}
                 height={200}
