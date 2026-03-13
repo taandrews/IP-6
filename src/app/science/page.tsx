@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ScienceSections } from "./ScienceSections";
 import { PathwayBadges } from "./PathwayBadges";
@@ -29,10 +30,11 @@ export default function SciencePage() {
 
             {/* Phytic acid 2D structure (Wikimedia Commons, Public Domain) */}
             <div className="hidden lg:block">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/phytic-acid-structure.svg"
                 alt="Chemical structure of phytic acid (IP6)"
+                width={200}
+                height={200}
                 className="w-full rounded-lg"
               />
               <p className="mt-2 text-center text-xs text-stone-400">

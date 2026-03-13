@@ -71,22 +71,24 @@ export default function AboutPage() {
 
           <div className="mt-12 grid items-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/phytic-acid-structure.svg"
                 alt="Chemical structure of phytic acid (IP6)"
-                className="mx-auto h-40 rounded-lg"
+                width={200}
+                height={160}
+                className="mx-auto h-40 w-auto rounded-lg"
               />
               <p className="mt-2 text-center text-xs text-stone-400">
                 IP6 (Phytic Acid)
               </p>
             </div>
             <div>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/inositol-structure.svg"
                 alt="Chemical structure of myo-inositol"
-                className="mx-auto h-40 rounded-lg"
+                width={200}
+                height={160}
+                className="mx-auto h-40 w-auto rounded-lg"
               />
               <p className="mt-2 text-center text-xs text-stone-400">
                 Myo-Inositol
