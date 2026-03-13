@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", system-ui, sans-serif;
+    background-color: #faf8f5;
+    color: #1a1a2e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-6xl px-6 sm:px-8 lg:px-12;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-none bg-accent px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white transition-all duration-200 hover:bg-accent-dark;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-none border-2 border-ink px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-ink transition-all duration-200 hover:bg-ink hover:text-white;
+  }
+
+}

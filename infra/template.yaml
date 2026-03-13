@@ -1,0 +1,198 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  IP-6 Research website infrastructure - contact form backend,
+  DynamoDB storage, S3 assets bucket, and SES email integration.
+
+Parameters:
+  Environment:
+    Type: String
+    Default: dev
+    AllowedValues:
+      - dev
+      - prod
+    Description: Deployment environment
+
+  SenderEmail:
+    Type: String
+    Description: Verified SES sender email address
+
+  ContactEmail:
+    Type: String
+    Description: Email address that receives contact form submissions
+
+Globals:
+  Function:
+    Timeout: 10
+
+Resources:
+  # ---------- DynamoDB Table ----------
+  Ip6ResearchContactTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub ip6-research-contact-table-${Environment}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: submissionId
+          AttributeType: S
+        - AttributeName: timestamp
+          AttributeType: N
+      KeySchema:
+        - AttributeName: submissionId
+          KeyType: HASH
+        - AttributeName: timestamp
+          KeyType: RANGE
+      TimeToLiveSpecification:
+        AttributeName: expiresAt
+        Enabled: true
+      Tags:
+        - Key: Project
+          Value: ip6-research
+        - Key: Environment
+          Value: !Ref Environment
+
+  # ---------- Lambda Execution Role ----------
+  Ip6ResearchLambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ip6-research-lambda-role-${Environment}
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: ip6-research-lambda-logs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !Sub arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/ip6-research-contact-function-${Environment}:*
+        - PolicyName: ip6-research-lambda-dynamodb
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                Resource: !GetAtt Ip6ResearchContactTable.Arn
+        - PolicyName: ip6-research-lambda-ses
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ses:SendEmail
+                Resource: !Sub arn:aws:ses:${AWS::Region}:${AWS::AccountId}:identity/*
+      Tags:
+        - Key: Project
+          Value: ip6-research
+        - Key: Environment
+          Value: !Ref Environment
+
+  # ---------- Lambda Function ----------
+  Ip6ResearchContactFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub ip6-research-contact-function-${Environment}
+      Runtime: nodejs20.x
+      Handler: index.handler
+      MemorySize: 128
+      Timeout: 10
+      Role: !GetAtt Ip6ResearchLambdaRole.Arn
+      CodeUri: ../lambda/contact/
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref Ip6ResearchContactTable
+          SENDER_EMAIL: !Ref SenderEmail
+          CONTACT_EMAIL: !Ref ContactEmail
+          ENVIRONMENT: !Ref Environment
+      Events:
+        ContactApi:
+          Type: Api
+          Properties:
+            Path: /contact
+            Method: post
+            RestApiId: !Ref Ip6ResearchApi
+      Tags:
+        Project: ip6-research
+        Environment: !Ref Environment
+
+  # ---------- API Gateway ----------
+  Ip6ResearchApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: !Sub ip6-research-api-${Environment}
+      StageName: !Ref Environment
+      Cors:
+        AllowMethods: "'POST,OPTIONS'"
+        AllowHeaders: "'Content-Type'"
+        AllowOrigin: "'*'"
+
+  # ---------- S3 Assets Bucket ----------
+  Ip6ResearchAssetsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub ip6-research-assets-bucket-${Environment}
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+        BlockPublicPolicy: false
+        IgnorePublicAcls: false
+        RestrictPublicBuckets: false
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders:
+              - '*'
+            AllowedMethods:
+              - GET
+              - HEAD
+            AllowedOrigins:
+              - '*'
+            MaxAge: 86400
+      Tags:
+        - Key: Project
+          Value: ip6-research
+        - Key: Environment
+          Value: !Ref Environment
+
+  Ip6ResearchAssetsBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref Ip6ResearchAssetsBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: PublicReadGetObject
+            Effect: Allow
+            Principal: '*'
+            Action: s3:GetObject
+            Resource: !Sub ${Ip6ResearchAssetsBucket.Arn}/*
+
+  # ---------- SES Email Identity ----------
+  Ip6ResearchSesIdentity:
+    Type: AWS::SES::EmailIdentity
+    Properties:
+      EmailIdentity: !Ref SenderEmail
+
+Outputs:
+  ApiEndpoint:
+    Description: Contact form API endpoint URL
+    Value: !Sub https://${Ip6ResearchApi}.execute-api.${AWS::Region}.amazonaws.com/${Environment}/contact
+
+  ContactTableName:
+    Description: DynamoDB table name for contact submissions
+    Value: !Ref Ip6ResearchContactTable
+
+  AssetsBucketName:
+    Description: S3 bucket name for static assets
+    Value: !Ref Ip6ResearchAssetsBucket
+
+  AssetsBucketUrl:
+    Description: S3 bucket URL for static assets
+    Value: !Sub https://${Ip6ResearchAssetsBucket}.s3.${AWS::Region}.amazonaws.com

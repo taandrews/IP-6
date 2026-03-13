@@ -1,0 +1,108 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Route 53 DNS configuration for ip6research.com pointing to CloudFront distribution.",
+  "Parameters": {
+    "HostedZoneName": {
+      "Type": "String",
+      "Default": "ip6research.com",
+      "Description": "The domain name for the hosted zone."
+    },
+    "CloudFrontDistributionDomainName": {
+      "Type": "String",
+      "Description": "The domain name of the CloudFront distribution (e.g., d111111abcdef8.cloudfront.net). Obtain this from the CloudFront console after creating the distribution."
+    },
+    "CloudFrontHostedZoneId": {
+      "Type": "String",
+      "Default": "Z2FDTNDATAQYW2",
+      "Description": "The hosted zone ID for CloudFront distributions. This is always Z2FDTNDATAQYW2 for CloudFront."
+    }
+  },
+  "Resources": {
+    "Ip6ResearchHostedZone": {
+      "Type": "AWS::Route53::HostedZone",
+      "Properties": {
+        "Name": { "Ref": "HostedZoneName" },
+        "HostedZoneConfig": {
+          "Comment": "ip6-research - Hosted zone for ip6research.com"
+        }
+      }
+    },
+    "Ip6ResearchARecord": {
+      "Type": "AWS::Route53::RecordSet",
+      "DependsOn": "Ip6ResearchHostedZone",
+      "Properties": {
+        "HostedZoneId": { "Ref": "Ip6ResearchHostedZone" },
+        "Name": { "Ref": "HostedZoneName" },
+        "Type": "A",
+        "AliasTarget": {
+          "DNSName": { "Ref": "CloudFrontDistributionDomainName" },
+          "HostedZoneId": { "Ref": "CloudFrontHostedZoneId" },
+          "EvaluateTargetHealth": false
+        },
+        "_Comment": "IPv4 alias record pointing the apex domain to CloudFront"
+      }
+    },
+    "Ip6ResearchAAAARecord": {
+      "Type": "AWS::Route53::RecordSet",
+      "DependsOn": "Ip6ResearchHostedZone",
+      "Properties": {
+        "HostedZoneId": { "Ref": "Ip6ResearchHostedZone" },
+        "Name": { "Ref": "HostedZoneName" },
+        "Type": "AAAA",
+        "AliasTarget": {
+          "DNSName": { "Ref": "CloudFrontDistributionDomainName" },
+          "HostedZoneId": { "Ref": "CloudFrontHostedZoneId" },
+          "EvaluateTargetHealth": false
+        },
+        "_Comment": "IPv6 alias record pointing the apex domain to CloudFront"
+      }
+    },
+    "Ip6ResearchWwwARecord": {
+      "Type": "AWS::Route53::RecordSet",
+      "DependsOn": "Ip6ResearchHostedZone",
+      "Properties": {
+        "HostedZoneId": { "Ref": "Ip6ResearchHostedZone" },
+        "Name": { "Fn::Sub": "www.${HostedZoneName}" },
+        "Type": "A",
+        "AliasTarget": {
+          "DNSName": { "Ref": "CloudFrontDistributionDomainName" },
+          "HostedZoneId": { "Ref": "CloudFrontHostedZoneId" },
+          "EvaluateTargetHealth": false
+        },
+        "_Comment": "IPv4 alias record pointing www subdomain to CloudFront"
+      }
+    },
+    "Ip6ResearchWwwAAAARecord": {
+      "Type": "AWS::Route53::RecordSet",
+      "DependsOn": "Ip6ResearchHostedZone",
+      "Properties": {
+        "HostedZoneId": { "Ref": "Ip6ResearchHostedZone" },
+        "Name": { "Fn::Sub": "www.${HostedZoneName}" },
+        "Type": "AAAA",
+        "AliasTarget": {
+          "DNSName": { "Ref": "CloudFrontDistributionDomainName" },
+          "HostedZoneId": { "Ref": "CloudFrontHostedZoneId" },
+          "EvaluateTargetHealth": false
+        },
+        "_Comment": "IPv6 alias record pointing www subdomain to CloudFront"
+      }
+    }
+  },
+  "Outputs": {
+    "HostedZoneId": {
+      "Description": "The ID of the hosted zone. Use this when configuring domain nameservers.",
+      "Value": { "Ref": "Ip6ResearchHostedZone" }
+    },
+    "NameServers": {
+      "Description": "The nameservers assigned to this hosted zone. Update your domain registrar with these values.",
+      "Value": { "Fn::Join": [", ", { "Fn::GetAtt": ["Ip6ResearchHostedZone", "NameServers"] }] }
+    }
+  },
+  "_ManualSteps": [
+    "1. If the domain is registered outside AWS, update the registrar's nameservers to match the Route 53 hosted zone NS records.",
+    "2. If transferring the domain to Route 53, initiate the transfer from the Route 53 console and confirm via the registrant email.",
+    "3. DNS propagation can take up to 48 hours after nameserver changes.",
+    "4. The CloudFront distribution must be fully deployed before DNS records will resolve correctly.",
+    "5. Ensure the ACM certificate covers both ip6research.com and www.ip6research.com before associating with CloudFront."
+  ]
+}

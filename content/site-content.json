@@ -1,0 +1,206 @@
+{
+  "global": {
+    "companyName": "IP-6 Research, Inc.",
+    "slogan": "IP6 + Inositol: Nature's Medicine for the New Millennium",
+    "tagline": "Learn about the health benefits of B vitamin Inositol and its derivative IP6",
+    "sidebarConditions": "Alzheimer's disease / cancer / cardiovascular disease / diabetes / kidney stone / Parkinson's",
+    "address": {
+      "street": "15 Charles Plaza, Suite 2508",
+      "city": "Baltimore",
+      "state": "MD",
+      "zip": "21201-3931"
+    },
+    "phone": "1-410-659-3906",
+    "email": "research@ip-6.net",
+    "website": "http://ip-6.net",
+    "copyright": "All copyrights reserved by IP-6 Research, Inc.",
+    "social": {
+      "twitter": "http://www.twitter.com/IP6Research",
+      "facebook": "https://www.facebook.com/pages/IP-6-Research-Inc/241284989246005"
+    },
+    "disclaimer": "This Web site contains only research information on IP6 and Inositol; the contents are not to be used as medical advice for which you should consult your physician(s) or other health-care provider(s). IP-6 Research, Inc., does not assume any responsibility whatsoever for your use of this Web site or the information contained herein.",
+    "patents": [
+      "US Patent #5,082,833",
+      "US Patent #7,009,067",
+      "US Patent #7,517,868",
+      "US Patent #7,989,435"
+    ],
+    "keywords": "Alzheimer's Atherosclerosis Cancer Cardiovascular Diabetes Inositol IP6 Kidney stone Multiple Sclerosis Osteoporosis Parkinson's Radiation Shamsuddin"
+  },
+  "pages": {
+    "home": {
+      "title": "Welcome to IP6 Research!",
+      "metaDescription": "Learn how the B vitamin inositol and its derivative IP6 prevent cancer, Alzheimer's disease, osteoporosis; protect against radiation; lower cholesterol, boost immunity.",
+      "hero": {
+        "headline": "Welcome to IP6 Research",
+        "subheadline": "IP6 + Inositol: Nature's Medicine for the New Millennium",
+        "description": "Learn about the health benefits of B vitamin Inositol and its derivative IP6"
+      },
+      "intro": "The B-vitamin inositol and its derivative IP6 (inositol hexaphosphate) are ubiquitous in soil, plant seeds such as rice, corn, soy, wheat, sesame; and in all mammalian cells. IP6 + Inositol act as broad-spectrum anti-cancer cocktail, boost immune system, help lower cholesterol, prevent kidney stones and the complications of diabetes, and reduce the risk of cardiovascular diseases, including heart attack, stroke etc.",
+      "ip6Description": "IP6 (or InsP6) is a 6-carbon-ring carbohydrate (inositol) with 6 phosphate groups that are naturally saturated with Ca++ and Mg++. It was discovered in seeds in 1855-1856 by Hartig; because of its plant origin it was called 'phytin' and in 1910 its molecular structure as myo-inositol-1,2,3,4,5,6-hexakis dihydrogen phosphate was elucidated.",
+      "pioneeringResearch": "Pioneering experiments done in Professor AbulKalam M. Shamsuddin's laboratory beginning 1985 at the University of Maryland School of Medicine in Baltimore, USA, have shown that far from being an 'anti-nutrient' not only IP6 is extremely safe, but that it and its parent molecule Inositol have anti-cancer and immune-boosting function (US Patent #5,082,833 and corresponding foreign patents). Dr Shamsuddin and his associates' findings have been validated and expanded by other scientists around the world discovering many more health benefits of IP6 & Inositol.",
+      "bookReference": "Do numerous health benefits by a former 'anti-nutrient' sound 'Too Good to be True'? Read the book by the same title by Drs. Kim Vanderlinden (a naturopathic physician in Vancouver BC, Canada) and Ivana Vucenik (an IP6 researcher and Associate Professor at the University of Maryland School of Medicine, Baltimore, USA). In plain, easy to read language, they review the plethora of scientific and clinical data on the numerous health benefits of IP6 + Inositol.",
+      "stats": {
+        "yearsOfResearch": 40,
+        "publishedStudies": 200,
+        "countriesResearch": 30,
+        "patentsHeld": 4,
+        "researchSince": 1985
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "metaDescription": "IP6 & Inositol as Anticancer Agents - broad-spectrum anti-cancer action against breast, colon, leukemia, liver, lung, lymphoma, prostate, sarcoma and more.",
+      "anticancerIntro": {
+        "heading": "IP6 & Inositol as Anticancer Agents",
+        "content": "In the laboratory, IP6 ± Inositol have been shown to have consistent and reproducible anti-cancer action against a wide range of cancer models (eg. breast, colon, leukemia, liver, lung, lymphoma, prostate, sarcoma etc) making it a broad-spectrum anti-cancer agent. This anti-cancer action is both preventive and therapeutic, and the combination of IP6 + Inositol in correct proportion (US Patent # 5,082,833) yields the best results. Emerging clinical data confirm the laboratory findings."
+      },
+      "cancerTypes": ["Breast", "Colon", "Leukemia", "Liver", "Lung", "Lymphoma", "Prostate", "Sarcoma"],
+      "clinicalStudies": {
+        "heading": "Clinical Studies",
+        "content": "Several clinical studies of the efficacy of IP6+Inositol were presented at the 7th International Conference of Anticancer Research in Corfu, Greece, October 25-30, 2004. These included cancers of the colon, lungs and breast. Patients were treated with IP6+Inositol (8-24 gm/day) either with or without concurrent standard chemotherapy and/or radiotherapy. It was reported that IP6+Inositol reduced the chemo- and radiotherapy induced side-effects and acted synergistically to yield a much better response to treatment; at the very least, the patients enjoyed a better quality of life."
+      },
+      "differentiation": "Unlike most other anti-cancer agents, IP6 and Inositol are not cytotoxic, i.e they themselves do not kill cancer cells at the pharmacological dose; at high doses they induce apoptosis (programmed cell death). IP6 and Inositol rather tame the cancer cells to behave and look like normal cells (differentiation). While the cancer cells grow uncontrolled, the differentiated cells do not. Increased differentiation by IP6 was seen in all the cancer cell lines tested viz those from cancer of the breast, colon cancer, prostate cancer, leukemia, rhabdomyosarcoma (childhood cancer of muscle tissue) and liver cancer cell lines.",
+      "immuneBoosting": "Another manner by which IP6+Inositol combat cancer is by boosting the immune system. While IP6+Inositol themselves do not directly kill the cancer cells, there is a subset of T-lymphocytes called natural killer (NK) cells who do just that. And their ability to kill cancer cells is increased by IP6+Inositol. A more recent paper by Zhang et al confirms the ability of IP6 to boost NK cell activity.",
+      "combinationStudy": "In a March 2010 paper in ONCOLOGY REPORT, Dr. L Schroterova and colleagues from the Charles University in Prague, Czech Republic confirm that the combination of IP6+Inositol is the best for inhibiting cancer cell growth."
+    },
+    "benefits": {
+      "title": "Other Benefits",
+      "metaDescription": "IP6 and Inositol benefits for Alzheimer's, Parkinson's, cardiovascular disease, diabetes, kidney stones, radiation protection and more.",
+      "sections": [
+        {
+          "heading": "Alzheimer's, Parkinson's, Multiple Sclerosis & Kidney Stone Prevention",
+          "content": "The US Patent Office had issued several patents on the use of IP6 for treatment of Alzheimer's disease, Multiple Sclerosis and Parkinson's Disease. Work at Dr Manju Reddy's Lab in USA show 'significant neuroprotective effect' of IP6 in a cell culture model of Parkinson's disease. Professor Grases in Spain proposed that a deficiency of IP6 could be a risk factor for Alzheimer's disease. Professor JoAnne McLaurin and her colleagues at the University of Toronto have shown that inositol can bind with the amyloid beta protein - the culprit destroying the brain cells, ameliorating its toxicity.",
+          "kidneyStone": "Dr Philip Henneman and his colleagues at Harvard Medical School and Massachusetts General Hospital in Boston, USA back in 1958 successfully used IP6 for conditions associated with kidney stone. Professor Grases et al have shown once again that IP6 prevents kidney stone formation.",
+          "vitamin": "Professor Felix Grases and his co-workers at the University of Balearic Islands, Spain, have not only found IP6 in human plasma and urine, but that the levels decreased on an IP6-deficient diet and restored quickly after taking a supplement. Together with the numerous health benefits, these data strongly suggest that IP6 could very well be a vitamin!"
+        },
+        {
+          "heading": "Cardiovascular Disease Prevention",
+          "content": "Professor Grases and his colleagues have shown that IP6 prevents cardiovascular calcification. Abnormal or pathological calcification of soft tissues such as blood vessels, heart etc. can have serious consequences insofar as atherosclerosis and myocardial infarction are concerned. IP6 reduces the abnormal stickiness (aggregation) of platelets. IP6 protects the heart against reperfusion injury. Thus, IP6 may prevent cardiovascular diseases in more than one way."
+        },
+        {
+          "heading": "Prostate Cancer, AIDS Kaposi's Sarcoma and Leukemia",
+          "content": "Androgen-independent prostate cancers are harder to treat. Research shows enhanced killing of androgen-independent prostate cancer cells when IP6 is combined with proteasome inhibitors. IP6 blocks the tumorigenesis and angiogenic potential in both AIDS/Iatrogenic-related Kaposi's sarcoma and adult T-cell lymphoma cells. IP6 caused a dose-dependent cytotoxicity on various human myeloid leukemia cell lines as well as on fresh chronic myeloid leukemia progenitor cells; IP6 however had no toxic effect on normal human hematopoetic cells."
+        },
+        {
+          "heading": "IP6 + Inositol Against Diabetes",
+          "content": "Experiments with isolated murine pancreatic beta cells have shown that IP6 stimulates these cells to secrete insulin. IP6 supplementation when administered in diet lowered blood glucose levels in rats. IP6 treated mice showed a marked decrease in blood glucose level, higher glucokinase and glucose-6-phosphatase activity, higher hepatic glycogen and considerably lower body-weight than control mice. Inositol itself may work as an antioxidant and not only prevents but also reverses many of the complications of diabetes. Thus, on one hand, IP6 causes direct stimulation of insulin from pancreatic beta cells and inositol on the other hand helps in the prevention of complications of diabetes; combination of IP6 + Inositol gives dual benefits."
+        },
+        {
+          "heading": "Protection Against Radiation",
+          "content": "A report in the journal Radiation Protection Dosimetry (2007) shows strong affinity of inositol hexaphosphate (IP6) for uranium, suggesting that it could be an effective chelating agent for uranium in vivo. IP6 and inositol protect human cells against radiation damage in the laboratory in various ways. In vivo, IP6 significantly reduced the incidence and multiplicity of UV-induced skin tumors in mice. These data therefore suggest that IP6 + inositol could help protect us from various forms of radiation damage such as UV from sun-exposure, radiation therapy, cosmic radiation, accidental or induced nuclear blasts etc."
+        }
+      ]
+    },
+    "news": {
+      "title": "What's New?",
+      "metaDescription": "Latest research on IP6 citrate compounds, osteoporosis prevention, synergistic chemotherapy action, and the new book on Inositol & its Phosphates.",
+      "articles": [
+        {
+          "heading": "Novel IP6 Citrate Compounds",
+          "content": "By combining the ever so common and useful citric acid with IP6, a group of novel compounds with at least one citrate molecule attached at the hydroxyl group of the citric acid to the phosphate of the IP6 molecule have been formulated (named IP6cit). By virtue of IP6cit having more free binding sites to chelate cations (up to 24 sites in IP6 hexacitrate, as opposed to 12 in IP6) the novel compounds may be the most potent anti-oxidants to date.",
+          "patents": ["US Patent #7,009,067", "US Patent #7,517,868", "US Patent #7,989,435"]
+        },
+        {
+          "heading": "Prevention of Osteoporosis & Tooth Decay",
+          "content": "Soft drinks are extremely popular beverages throughout the world, they are also a common cause of dental erosion and tooth decay, the acidity of the beverages being the primary factor in bringing about this destruction. IP6 shows remarkable protective effect. In osteoporosis, there is excessive activity of bone-destroying osteoclast cells with concomitant inactivity of bone-forming osteoblast cells. Experiments show that IP6 & inositol can modulate the behavior of these bone-forming and bone-destroying cells to prevent osteoporosis."
+        },
+        {
+          "heading": "IP6 Acts Synergistically with Standard Chemotherapeutic Agents",
+          "content": "Dr Kawanishi and colleagues from Mie University, Japan report that while many anti-oxidants may be even harmful in cancer, IP6 is not only safe, but also beneficial and 'can safely protect humans against cancer'. IP6 was effective against cancer cell lines that were either adriamycin resistant or ER (estrogen receptor) negative. IP6 enhances the anticancer function of adriamycin or tamoxifen against human breast cancer cell lines. Studies on melanoma skin cancer cells show that IP6 inhibits growth and acts synergistically with pterostilbene. A randomized clinical study in breast cancer patients receiving chemotherapy along with IP6 + Inositol showed patients had significantly better quality of life and functional status."
+        },
+        {
+          "heading": "Inositol & its Phosphates: Basic Science to Practical Applications",
+          "content": "Aside from the various health benefits noted before, industrial applications of IP6 include preservation of food & wine, nanotechnology, lithium ion battery, fuel cell technology etc. Prof. Shamsuddin and Prof. Guang-Yu Yang of Northwestern University in Chicago offer a comprehensive review of the subject in their book 'Inositol & its Phosphates: Basic Science to Practical Applications' (Bentham 2015)."
+        }
+      ]
+    },
+    "science": {
+      "title": "Mechanisms of Action of IP6 & Inositol",
+      "metaDescription": "The science behind IP6 and Inositol - antioxidant mechanisms, cell differentiation, anti-angiogenesis, epigenetic regulation and more.",
+      "sections": [
+        {
+          "heading": "Antioxidant Action",
+          "content": "IP6 has been best known as an antioxidant. In our body highly reactive toxic chemicals such as hydroxyl radicals are formed as a consequence of oxidation of Fe2+ to Fe3+ during the Fenton Reaction. These radicals react with DNA, proteins or lipids causing cell injury or even cell death; from ageing to Alzheimer's disease, cancer, myocardial damage during infarction, etc. By binding with and hence inactivating Fe2+, IP6 prevents the formation of toxic hydroxyl radicals."
+        },
+        {
+          "heading": "Enhanced Microbial Defense",
+          "content": "IP6 while on one hand acts as an anti-oxidant to protect us from the harmful free radicals, it also enhances our body's ability to kill the invading microbes through increased production of the superoxides inside the neutrophils."
+        },
+        {
+          "heading": "Normalization of Cell Growth",
+          "content": "Another of the mechanisms of action of IP6 and inositol is inhibition of excessive and uncontrolled cell growth (normalization) in disease conditions without affecting the rate of cell growth in normal cells. In very high doses, IP6 may kill cancer cells, but not normal cells, a distinct difference with most anti-cancer agents."
+        },
+        {
+          "heading": "Cell Differentiation",
+          "content": "During transformation of normal cells to malignancy, the cancer cells lose the normal behavioral pattern, a phenomenon called de-differentiation. Another broad mechanism of action of IP6 & Inositol is by reversing that process or causing cell differentiation back to normal, so they also begin to look like normal cells."
+        },
+        {
+          "heading": "Anti-Angiogenesis",
+          "content": "Several groups of investigators have shown that IP6 also acts as an anti-angiogenesis agent, one of the molecular mechanisms may be by binding with FGF1."
+        },
+        {
+          "heading": "Epigenetic Regulation",
+          "content": "Epigenetic changes, the early steps in carcinogenesis involving gene expression without affecting DNA sequence modification are no less important. Research shows that while the carcinogen ENU up-regulated epigenetic events, these alterations were reduced by IP6 administration."
+        },
+        {
+          "heading": "Cell Surface Receptors & Signaling",
+          "content": "Cell surface receptors for IP6 have been identified on various different cell types. Some of the functions of IP6 could very well be receptor-mediated, effecting the down-stream signaling molecules and releasing intracellular Ca++. Ongoing research provides new data about how IP6 modulates intracellular regulators such as p53, p27, PI-3 Kinase, NFkB, PKC-delta, ppRb, Akt, ERK 1/2 etc."
+        }
+      ]
+    },
+    "scientist": {
+      "title": "The Scientist",
+      "metaDescription": "Professor AbulKalam M. Shamsuddin - pioneering researcher of IP6 and Inositol at the University of Maryland School of Medicine.",
+      "name": "AbulKalam M. Shamsuddin, M.B.,B.S., PhD",
+      "position": "Professor of Pathology",
+      "institution": "University of Maryland School of Medicine",
+      "location": "Baltimore, MD, U.S.A.",
+      "biography": "Prof Shamsuddin graduated from University of Dhaka - Dhaka Medical College. Following Internship in Massachusetts and Residency training in pathology in Maryland, he was certified by the American Board of Pathology in 1977 when he joined the faculty of the University of Maryland School of Medicine as an Instructor. In 1980, he received Ph.D. from the University of Maryland for his research on colon carcinogenesis and rose through the ranks of Assistant Professor and Associate Professor to become a full Professor in 1988.",
+      "awards": "For his excellence in teaching, Professor Shamsuddin received the Best Teacher award from the medical students many times, including the coveted 'Golden Apple Award' by the American Medical Students' Association in 1999.",
+      "cancerResearch": "Prof. Shamsuddin has been studying the process of cancer formation and the prevention of cancer since 1975. His research in the steps of colon cancer formation resulted in the development of a very simple and accurate screening test for colon cancer. This rather inexpensive test detects cancers at a very early stage, and even before they have formed; in other words, it can also detect precancerous polyps and other precancerous lesions and conditions. The test has been in use in China since the early 1990's!",
+      "ip6Discovery": "In mid 1985, Prof. Shamsuddin started his pioneering experiments on the anti-cancer property of inositol and inositol hexaphosphate (IP6) - natural constituents of cereals and legumes such as rice, corn, beans etc. For the next decade and a half, he has reconfirmed and expanded his groundbreaking studies to show the efficacy of IP6 and inositol against different cancers in various experimental models.",
+      "symposium": "Realizing the enormous potential for health benefits of IP6 and inositol for humans and the general lack of this knowledge, he became most instrumental in organizing the First International Symposium of Disease Prevention by IP6 and Other Rice Components in Kyoto, Japan (June 8-9, 1998).",
+      "publications": "Over 200 scientific publications",
+      "generalCancerMarker": "He further discovered that the colon cancer marker Gal-GalNAc is a common cancer marker expressed through a similar 'field-effect' phenomenon; thus forming the basis for a general cancer screening test such as for cancer of the lungs and breast, and possibly prostate and uterine cervix.",
+      "otherActivities": "A veteran of Bangladesh Liberation War, Prof. Shamsuddin was the founding President of IP-6 Foundation, Inc (Baltimore, USA) and Komolpur Janakallyan Trust (Dhaka, Bangladesh), non-profit organizations to support health-care and economic empowerment in rural Bangladesh."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "metaDescription": "FAQ about IP6 and Inositol - safety, mineral interaction, sources, combinations with other medicines, and what major organizations say.",
+      "intro": "We try to anticipate questions you might have and provide the answers here. If you need additional information please send e-mail to research@ip-6.net.",
+      "questions": [
+        {
+          "question": "Does IP6 reduce calcium, iron, zinc or other minerals?",
+          "answer": "No! This has been a long-held misconception that was based on some not so rigorous studies in the 1950's whereby mineral deficiency in certain populations in Egypt and northern Iran was associated with eating unleavened bread which is rich in IP6. However, these studies did not consider other factors that may have been associated with mineral deficiencies. Subsequent carefully designed studies both in humans and in laboratory animals in different laboratories worldwide have refuted this misconception. In nature IP6 exists as a salt of Ca++ and Mg++ i.e. calcium-magnesium inositol hexaphosphate (also known as phytin). Lifetime experiments in rodents and recent human studies have not shown a mineral deficiency following oral administration of IP6 salts."
+        },
+        {
+          "question": "How safe are Inositol and IP6?",
+          "answer": "Both IP6 (calcium phytate) and inositol are in the list of GRAS (Generally Recognized as Safe) substance by the United States Food and Drug Administration (FDA); GRAS is a designation by the US FDA that a chemical or substance added to food is considered safe by experts."
+        },
+        {
+          "question": "Why combine Inositol with IP6?",
+          "answer": "The scientific premise has been that the addition of inositol to IP6 in a 1:1 molar ratio would yield more of the lower inositol phosphate, IP3, a key regulator in cell, thereby increasing the efficiency of IP6. Indeed experiments have proven that the combination has resulted in synergistic, most consistent and safe, anticancer, and immune enhancing effect. When all the various tumor parameters (tumor number, tumor burden, incidence etc) were taken into account, the combination of IP6+Inositol was the safest and the most effective. Thus, based on the available lab data, for safety and efficacy, human clinical trials must include the combination of IP6 + Inositol and NOT IP6 alone."
+        },
+        {
+          "question": "What is the source of IP6 and Inositol?",
+          "answer": "The two main sources of reagent-grade IP6 and Inositol are rice (rice bran) and corn. Most of the nutraceutical-grade compounds are extracted from rice bran. The purity of Inositol is >99.8%; however due to the complex and tedious nature of extraction and purification, while the reagent-grade IP6 is about 98% pure, that of nutraceutical grade ranges from 50-92%."
+        },
+        {
+          "question": "Does IP6 and inositol interact with other medicine or food?",
+          "answer": "Inositol is very inert and is not known to have any interaction. IP6 owing to its chemical structure of having 6 phosphate groups, is suspected to be reactive. However, the naturally occurring IP6 is in the form of calcium-magnesium IP6 whereby the reactive phosphates are unavailable for any strong chemical interaction. Both experimentally and clinically IP6 + Inositol have been found to act synergistically with standard chemotherapeutic drugs. As to platelets, IP6 causes an inhibition of aggregation of the abnormally sticky platelets, but not of those from normal humans. It appears that IP6 is about 2-fold more potent than aspirin in inhibiting platelet aggregation."
+        },
+        {
+          "question": "What do major organizations say about IP6?",
+          "answer": "Organizations such as The American Cancer Society, Memorial Sloan-Kettering Cancer Center, and others have reviewed the research on IP6 and Inositol."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "metaDescription": "Contact IP-6 Research, Inc. in Baltimore, MD. Send us your questions about IP6 and Inositol research.",
+      "intro": "Thank you for visiting our website. You may e-mail us to research@ip-6.net or fill out the following form to ask specific questions. When you are finished, click the 'Submit' button to send us your message.",
+      "formFields": ["firstName", "lastName", "email", "phone", "subject", "message"]
+    }
+  }
+}
