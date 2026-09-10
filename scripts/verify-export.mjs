@@ -10,6 +10,7 @@ for(const [route,html] of pages){
  if(!/<title>[^<]+<\/title>/.test(html))errors.push(`${route}: missing title`);
  if(!/<meta name="description" content="[^"]+"/.test(html))errors.push(`${route}: missing description`);
  if(/ip6research\.com|archetyp\.cx|Message Sent Successfully|200\+ published|30\+ countries/.test(html))errors.push(`${route}: stale or excluded content`);
+ if(/ip6original\.com|myshopify\.com|shopify\.com|add to cart|buy now|shop now/i.test(html))errors.push(`${route}: commercial content on research property`);
  for(const match of html.matchAll(/\b(href|src)="([^"]+)"/g)){
   const kind=match[1],value=match[2].replaceAll('&amp;','&');if(/^(https?:|mailto:|tel:|data:)/.test(value))continue;
   const [pathname,hash]=value.split('#');
