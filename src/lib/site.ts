@@ -1,0 +1,1 @@
+export const asset=(path:string)=>`${process.env.NEXT_PUBLIC_BASE_PATH ?? "/IP-6"}${path}`;

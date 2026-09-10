@@ -1,0 +1,325 @@
+{
+  "about": [
+    {
+      "id": "purpose",
+      "title": "A focus on IP6 and inositol",
+      "paragraphs": [
+        "IP-6 Research, Inc. is based in Baltimore, Maryland. Its research information collection brings together investigations into inositol and inositol hexaphosphate, with an emphasis on the work initiated by Professor AbulKalam M. Shamsuddin and expanded by researchers internationally.",
+        "The scientific story begins with molecules found in everyday biology. Inositol is a six-carbon cyclic polyol; IP6 is its derivative with six phosphate groups. IP6 occurs in seeds and grains, including rice, corn, wheat, soy, and sesame, and in mammalian cells. It is also called InsP6, phytic acid, or phytate, depending on its chemical form.",
+        "The original site described inositol as a B vitamin. Inositol is commonly described as a vitamin-like compound, rather than an essential B vitamin. Similarly, suggestions that IP6 might be a vitamin remain hypotheses, not an established classification."
+      ]
+    },
+    {
+      "id": "history",
+      "title": "From phytin to cellular research",
+      "label": "Scientific background",
+      "paragraphs": [
+        "Hartig identified the material later known as phytin in seeds in 1855–1856. Its molecular structure was elucidated in 1910. Naturally occurring phytin includes calcium and magnesium salts of inositol hexaphosphate.",
+        "Phytate has long attracted attention for its ability to bind minerals. Its historical description as an “anti-nutrient” prompted research on low-phytic-acid crops. The original collection cites work on genetic engineering, reduced-phytate maize, and the agronomic challenges of low-phytate mutants. These questions connect nutrition, crop biology, and molecular chemistry.",
+        "In 1985, experiments in Shamsuddin’s laboratory at the University of Maryland School of Medicine began investigating the anticancer activity of IP6 and inositol. Subsequent research explored cellular mechanisms, immune activity, and additional biological applications."
+      ],
+      "refs": [
+        "20191364",
+        "20335626",
+        "22093370"
+      ]
+    },
+    {
+      "id": "oncology",
+      "title": "Cancer biology across experimental models",
+      "label": "Preclinical research",
+      "paragraphs": [
+        "The original research collection describes investigations in breast, colon, liver, lung, prostate, leukemia, lymphoma, and sarcoma models. Researchers studied IP6 and inositol separately and together, measuring tumor development, cell proliferation, differentiation, and apoptosis.",
+        "A liver cancer experiment cited by the original site reported tumor regression in a mouse model following IP6 treatment. This is an experimental result in animals, not evidence that IP6 treats liver cancer in humans.",
+        "Studies of differentiation examined whether malignant cells could acquire characteristics associated with more mature cells. The collection describes changes in mammary cell lactalbumin, prostate-specific antigen, and alpha-fetoprotein expression. At higher experimental concentrations, some studies also observed programmed cell death. Results depend on the model, concentration, and conditions.",
+        "Schroterova and colleagues at Charles University reported experiments in HT-29, SW-480, and SW-620 colorectal carcinoma cells in 2010. Their work compared IP6, inositol, and the combination using metabolic activity, DNA synthesis, protein synthesis, and apoptosis measurements. Inositol increased the proapoptotic effect of IP6 in the tested cell lines."
+      ],
+      "refs": [
+        "9891450",
+        "20127021"
+      ]
+    },
+    {
+      "id": "immunity",
+      "title": "The role of immune activity",
+      "label": "Laboratory & animal research",
+      "paragraphs": [
+        "Natural killer (NK) cells are immune cells that can recognize and destroy abnormal cells. Work cited in the original collection examined the effect of IP6 and inositol on NK activity in experimental systems, including tumor-bearing animals.",
+        "The original studies reported enhanced NK activity with the compounds, including their combination. A later paper by Zhang and colleagues investigated IP6 and NK cell activity. These observations contribute to a mechanistic research question; they do not establish a general immune-boosting benefit in people."
+      ],
+      "refs": [
+        "16124063",
+        "2766453"
+      ]
+    },
+    {
+      "id": "clinical",
+      "title": "From laboratory observations to human studies",
+      "label": "Early clinical evidence",
+      "paragraphs": [
+        "The original site described reports presented at the 7th International Conference of Anticancer Research in Corfu, Greece, on October 25–30, 2004. These included colon, lung, and breast cancer cases in which IP6 and inositol were used with or without conventional treatment. The conference material reported treatment responses, side effects, and quality-of-life observations.",
+        "The conference archive included a CT example involving liver metastases from colon cancer. Individual case images and conference reports have important limitations: they cannot establish causation or substitute for controlled trials.",
+        "A subsequent randomized pilot study in 14 breast cancer patients, published in 2010, compared IP6 plus inositol with placebo during chemotherapy. It reported differences in quality of life, functional status, and some blood-count outcomes. Its small sample size means larger studies are needed. The Insights section presents this paper alongside other work on combinations with standard agents.",
+        "An April 7, 2010 NBC Nightly News report referenced by the original site discussed an inositol lung cancer investigation. That historical media report should be distinguished from primary clinical evidence."
+      ]
+    },
+    {
+      "id": "patents",
+      "title": "A documented history of invention",
+      "paragraphs": [
+        "The source collection links U.S. Patent 5,082,833 concerning IP6 and inositol, together with three later patents associated with IP6 citrate compounds. These documents preserve the history of the research and proposed applications. A patent is not clinical evidence or regulatory approval for a medical treatment."
+      ]
+    }
+  ],
+  "science": [
+    {
+      "id": "antioxidant",
+      "title": "Antioxidant chemistry",
+      "label": "Molecular mechanism",
+      "paragraphs": [
+        "IP6 can bind iron, a property central to its study as an antioxidant. In the Fenton reaction, ferrous iron reacts with hydrogen peroxide to generate highly reactive hydroxyl radicals. These radicals can damage DNA, proteins, and lipids.",
+        "By binding iron, IP6 can alter the chemistry that produces those radicals in experimental systems. This mechanism has motivated research into oxidative injury and cellular protection.",
+        "The biology is context-dependent. Oxidative processes also participate in immune defense. Research cited in the original collection examined inositol phosphates and superoxide production in neutrophils, immune cells that respond to microbes."
+      ],
+      "refs": [
+        "1655041"
+      ]
+    },
+    {
+      "id": "differentiation",
+      "title": "Cell growth and differentiation",
+      "label": "Cell culture",
+      "paragraphs": [
+        "Cancer research has investigated whether IP6 and inositol influence uncontrolled proliferation and the differentiated characteristics of malignant cells. Differentiation is the process by which cells acquire specialized features and functions.",
+        "The original collection illustrates a study in MCF-7 human breast cancer cells. Following exposure to IP6, investigators reported fewer cells and increased lactalbumin production, a marker associated with mammary epithelial differentiation. The original panels show staining and the concentration-dependent changes measured in the experiment.",
+        "Other research examined apoptosis at higher concentrations. Effects on proliferation, differentiation, and cell death should be interpreted separately and in the context of each experimental model."
+      ],
+      "refs": [
+        "9042302"
+      ]
+    },
+    {
+      "id": "signaling",
+      "title": "Inositol phosphates and cell signaling",
+      "label": "Biological pathways",
+      "paragraphs": [
+        "IP6 sits within a broader family of inositol phosphates. Enzymatic reactions can remove phosphate groups to produce lower inositol phosphates, or generate more highly phosphorylated compounds such as IP7 and IP8.",
+        "The original site discusses possible roles for cell-surface binding, receptor-mediated activity, and intracellular calcium signaling. It also notes that the fate and function of IP6 entering intracellular inositol phosphate pools require further investigation.",
+        "Research has examined regulators including p53, p27, PI3K, NF-κB, PKCδ, retinoblastoma protein, Akt, and ERK1/2. These pathways help regulate cell growth, survival, and other cellular behaviors. A pathway association is a starting point for understanding mechanism, rather than proof of a clinical outcome."
+      ]
+    },
+    {
+      "id": "angiogenesis",
+      "title": "Angiogenesis and growth-factor interactions",
+      "label": "Experimental research",
+      "paragraphs": [
+        "Angiogenesis is the formation of new blood vessels. It is essential to normal biology and can also support tumor growth. IP6 has been investigated for effects on angiogenic processes.",
+        "The collection cites studies of antiangiogenic activity and research involving fibroblast growth factor 1 (FGF1). Interactions with growth factors may help explain some experimental effects, but their relevance depends on the biological setting."
+      ],
+      "refs": [
+        "21077672"
+      ]
+    },
+    {
+      "id": "epigenetics",
+      "title": "Epigenetic regulation",
+      "label": "Animal model",
+      "paragraphs": [
+        "Epigenetic regulation changes gene activity without changing the underlying DNA sequence. Relevant processes include DNA methylation, methylated-DNA binding, and histone modification.",
+        "Pandey and Gupta studied IP6 in a mouse lung model exposed to the carcinogen ethylnitrosourea (ENU). Their 2010 report examined DNMT1, MeCP2, MBD1, and HDAC1, molecules involved in epigenetic regulation. IP6 administration reduced several ENU-associated alterations.",
+        "The study contributes mechanistic evidence in an animal model. It does not establish an epigenetic treatment in humans."
+      ],
+      "refs": [
+        "21154115"
+      ]
+    },
+    {
+      "id": "literature",
+      "title": "Follow the scientific literature",
+      "paragraphs": [
+        "Relevant publications may use several names for the same molecule: IP6, InsP6, inositol hexaphosphate, inositol hexakisphosphate, or phytic acid. Search terms influence which results appear.",
+        "The references below preserve the source collection’s scientific links and pathway searches. When reading a paper, consider whether it is a cell study, animal experiment, observational study, or clinical trial, and whether its formulation and conditions match the question you are asking."
+      ]
+    }
+  ],
+  "benefits": [
+    {
+      "id": "neuroscience",
+      "title": "Neuroscience and neuroprotection",
+      "label": "Preclinical research & hypotheses",
+      "paragraphs": [
+        "The original collection discusses Alzheimer’s disease, Parkinson’s disease, and multiple sclerosis as areas of IP6-related investigation and patent proposals. These topics should be understood as research interests, rather than established therapeutic uses.",
+        "Work from Manju Reddy’s laboratory reported neuroprotective effects in a Parkinson’s disease cell-culture model. Research associated with Felix Grases proposed a relationship between IP6 availability and Alzheimer’s disease, and a paper published in 2011 examined IP6 in experimental Alzheimer’s models.",
+        "JoAnne McLaurin and colleagues at the University of Toronto studied inositol interactions with amyloid-beta and its aggregation and toxicity. Findings for a particular inositol form or model should not be generalized to every inositol compound or to people with neurodegenerative disease."
+      ],
+      "refs": [
+        "18255213",
+        "20930278"
+      ]
+    },
+    {
+      "id": "kidney",
+      "title": "Kidney stones and mineral crystallization",
+      "label": "Historical & experimental research",
+      "paragraphs": [
+        "The collection traces this area to work by Philip Henneman and colleagues at Harvard Medical School and Massachusetts General Hospital in 1958, followed by later investigations by Felix Grases and collaborators.",
+        "These studies explored phytate, urinary chemistry, and the formation of mineral crystals. Other work described phytate measurements in human plasma and urine, and changes associated with diet.",
+        "The original site proposed that IP6 might qualify as a vitamin. That proposal remains distinct from an established nutritional classification. Experimental crystal-inhibition findings also do not by themselves establish a kidney stone treatment."
+      ],
+      "refs": [
+        "17127264"
+      ]
+    },
+    {
+      "id": "cardiovascular",
+      "title": "Cardiovascular biology",
+      "label": "Experimental research",
+      "paragraphs": [
+        "Cardiovascular investigations cited in the collection examine pathological calcification, platelet aggregation, and reperfusion injury. These are different biological processes and require different forms of evidence.",
+        "Grases and colleagues investigated phytate in relation to abnormal mineral deposition in soft tissues and blood vessels. Separate work examined IP6 and platelet aggregation. Another line of investigation considered oxidative damage when blood flow returns to previously deprived heart tissue.",
+        "These mechanisms are relevant to cardiovascular research, but the findings do not establish that an oral IP6 supplement prevents heart attacks or strokes."
+      ],
+      "refs": [
+        "18508720",
+        "10625941",
+        "1929656"
+      ]
+    },
+    {
+      "id": "cancer-models",
+      "title": "Prostate, blood, and vascular cancer models",
+      "label": "Laboratory research",
+      "paragraphs": [
+        "Diallo and colleagues in Montreal studied combinations of IP6 and proteasome inhibitors in androgen-independent prostate cancer cells. The original collection also points to subsequent work from that group and research from Rajesh Agarwal’s laboratory at the University of Colorado.",
+        "H. C. Tran and colleagues at the University of Maryland reported work on Kaposi’s sarcoma and adult T-cell lymphoma cells at the American Association for Cancer Research meeting in 2003. Their experiments examined tumorigenic and angiogenic activity in vitro.",
+        "A 2002 paper from Giorgio Lambertenghi Deliliers and colleagues at the University of Milan examined IP6 in human myeloid leukemia cell lines and fresh chronic myeloid leukemia progenitor cells. The researchers reported concentration-dependent effects and compared them with normal hematopoietic cells. These were laboratory observations, not clinical treatment outcomes."
+      ],
+      "refs": [
+        "18941459",
+        "12028025"
+      ]
+    },
+    {
+      "id": "metabolism",
+      "title": "Glucose metabolism and diabetes research",
+      "label": "Cell & animal models",
+      "paragraphs": [
+        "Experiments reported by Hoy and colleagues in 2003 investigated insulin secretion in isolated murine pancreatic beta cells. Dilworth and colleagues studied dietary IP6 and blood glucose in rats.",
+        "Soo Mi Kim and colleagues at Kyungpook National University examined IP6 in C57BL/6N mice receiving a high-fat diet. Their 2010 study assessed glucose-metabolizing enzymes, blood glucose, hepatic glycogen, and body weight.",
+        "The source collection also cites work by Nascimento and colleagues on inositol and oxidative mechanisms in experimental diabetic complications. These distinct studies provide research leads. They do not establish that the combination treats human diabetes or reverses its complications."
+      ],
+      "refs": [
+        "12837755",
+        "15999878",
+        "20664725",
+        "16373499"
+      ]
+    },
+    {
+      "id": "radiation",
+      "title": "Radiation and cellular protection",
+      "label": "Laboratory & animal research",
+      "paragraphs": [
+        "This area examines cellular injury associated with ultraviolet and ionizing radiation. A 2007 report by Cebrian and colleagues at CIEMAT in Madrid studied IP6 binding of uranium, suggesting a potential application for further investigation.",
+        "Shamsuddin and colleagues presented laboratory work on IP6, inositol, and radiation-related cell injury at the 2007 AACR Centennial Meeting in Singapore. Other experiments investigated ultraviolet-induced skin tumors in mice and responses in human HaCaT keratinocyte cultures, including a 2011 report by Williams and colleagues.",
+        "The collection includes a radiation-related patent application. Neither that proposal nor laboratory results establish protection for people exposed to radiation, and they should not be used to guide radiation treatment or emergency care."
+      ],
+      "refs": [
+        "17627956"
+      ]
+    },
+    {
+      "id": "bone",
+      "title": "Bone and dental research",
+      "label": "Laboratory & observational evidence",
+      "paragraphs": [
+        "The source site describes experiments on osteoblasts and osteoclasts, the cells involved in bone formation and resorption. It also cites epidemiological studies and research in postmenopausal women examining phytate intake and bone-related outcomes.",
+        "Dental research examined the acidity of soft drinks, dental erosion, and the effects of phytate under experimental conditions. These lines of work appear in the Insights archive with their original references and figures."
+      ],
+      "refs": [
+        "15779219",
+        "22905230",
+        "19053869",
+        "22614760"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": "citrate",
+      "title": "The IP6 citrate compounds",
+      "label": "Chemistry & invention",
+      "paragraphs": [
+        "The original collection introduces IP6 citrate compounds, or IP6cit, formed by linking citrate groups to the phosphate groups of IP6. The proposed structures were described in U.S. Patents 7,009,067, 7,517,868, and 7,989,435.",
+        "The site describes additional potential cation-binding sites in IP6 hexacitrate compared with IP6, motivating hypotheses about chelation and antioxidant behavior. Such proposed properties require experimental validation; they do not establish that these compounds are superior therapies.",
+        "A related research question concerns phosphorus utilization in non-ruminant animals. The collection cites work on adding citric acid to poultry feed and improving phytate phosphorus utilization. It proposes that IP6cit could have agricultural and environmental applications, including reducing phosphorus waste. Those proposed uses are distinct from the cited feeding experiment."
+      ],
+      "refs": [
+        "16206557"
+      ]
+    },
+    {
+      "id": "bone",
+      "title": "Bone remodeling and dental erosion",
+      "label": "Research archive",
+      "paragraphs": [
+        "The original site groups bone and dental investigations around mineral chemistry. It describes the balance between bone-forming osteoblasts and bone-resorbing osteoclasts, and experiments studying the effects of IP6 and inositol on these cells.",
+        "It also cites observational work on dietary phytate and bone mineral density, including studies in postmenopausal women. Associations between diet and bone outcomes should not be treated as proof that one compound prevents osteoporosis.",
+        "Dental work examines the erosive properties of acidic beverages and the effects of phytate in experimental settings. The underlying research should be consulted for formulation, conditions, and clinical relevance."
+      ],
+      "refs": [
+        "15779219",
+        "22905230",
+        "19053869",
+        "22614760"
+      ]
+    },
+    {
+      "id": "combinations",
+      "title": "Interactions with other anticancer agents",
+      "label": "Cell culture",
+      "paragraphs": [
+        "Tantivejkul and colleagues investigated IP6 alongside adriamycin and tamoxifen in human breast cancer cell lines, including resistant or estrogen-receptor-negative models. Their 2003 paper reported enhanced antiproliferative effects under the experimental conditions.",
+        "A 2009 melanoma-cell study examined IP6 combined with pterostilbene and reported synergistic growth inhibition. These laboratory combinations do not establish effective or safe treatment combinations for patients.",
+        "The collection also cites Kawanishi and colleagues on the complex role of antioxidants in cancer-related oxidative damage. A compound’s antioxidant activity alone cannot predict its clinical benefits or its interactions with treatment."
+      ],
+      "refs": [
+        "12846414",
+        "19887199",
+        "16356133"
+      ]
+    },
+    {
+      "id": "clinical",
+      "title": "Quality of life during chemotherapy",
+      "label": "Randomized pilot · 2010",
+      "paragraphs": [
+        "Bacic and colleagues at General Hospital Zadar in Croatia conducted a prospective randomized pilot study of 14 patients with invasive ductal breast cancer receiving chemotherapy. Participants were assigned to IP6 plus inositol or placebo.",
+        "The study reported better quality-of-life and functional-status scores in the intervention group. It also reported differences in leukocyte and platelet counts, while red blood cell counts and tumor markers were unchanged in both groups.",
+        "Published in the Journal of Experimental & Clinical Cancer Research in February 2010, this small pilot provides a reason for further study. It does not establish that IP6 plus inositol treats cancer or replaces conventional therapy."
+      ],
+      "refs": [
+        "20152024"
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "Beyond biomedical research",
+      "label": "Cross-disciplinary applications",
+      "paragraphs": [
+        "Inositol phosphates are also studied outside medicine. The original collection identifies work involving food and wine preservation, nanotechnology, lithium-ion batteries, and fuel-cell technology.",
+        "These applications reflect the chemical versatility of the compounds. Findings in one field should not be interpreted as evidence of effectiveness in a different setting."
+      ]
+    },
+    {
+      "id": "books",
+      "title": "Books and scientific education",
+      "label": "Selected bibliography",
+      "paragraphs": [
+        "Inositol & its Phosphates: Basic Science to Practical Applications, edited by AbulKalam M. Shamsuddin and Guang-Yu Yang and published by Bentham in 2015, brings together historical, biochemical, biomedical, and industrial perspectives.",
+        "Shamsuddin’s IP6 + Inositol: Nature’s Medicine for the Millennium presents his account of the research and its development. Its historical title is retained as a bibliographic reference, rather than a treatment claim.",
+        "Too Good to be True? by Kim Vanderlinden and Ivana Vucenik discusses IP6 and inositol research for a general audience, including the path from laboratory findings to human investigations. The source site’s linked reading material is preserved below."
+      ]
+    }
+  ]
+}

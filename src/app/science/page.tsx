@@ -1,91 +1,13 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { ScienceSections } from "./ScienceSections";
-import { PathwayBadges } from "./PathwayBadges";
-
-export const metadata: Metadata = {
-  title: "Mechanisms of Action of IP6 & Inositol | IP-6 Research",
-  description:
-    "The science behind IP6 and Inositol - antioxidant mechanisms, cell differentiation, anti-angiogenesis, epigenetic regulation and more.",
-};
-
-export default function SciencePage() {
-  return (
-    <main className="min-h-screen bg-bone">
-      {/* Header */}
-      <section className="pt-32 pb-20">
-        <div className="section-container">
-          <div className="grid items-end gap-12 lg:grid-cols-[1fr_200px]">
-            <div>
-              <p className="max-w-2xl text-lg text-stone-500">
-                Exploring the molecular pathways and biological mechanisms through
-                which IP6 and Inositol exert their remarkable effects on human
-                health.
-              </p>
-              <h1 className="mt-4 max-w-3xl font-display text-4xl text-ink md:text-5xl lg:text-6xl">
-                Mechanisms of Action of IP6 &amp; Inositol
-              </h1>
-            </div>
-
-            {/* Phytic acid 2D structure (Wikimedia Commons, Public Domain) */}
-            <div className="hidden lg:block">
-              <Image
-                src="/IP-6/images/phytic-acid-structure.svg"
-                alt="Chemical structure of phytic acid (IP6)"
-                width={200}
-                height={200}
-                className="w-full rounded-lg"
-              />
-              <p className="mt-2 text-center text-xs text-stone-400">
-                Phytic acid (IP6) structure
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Science Sections */}
-      <ScienceSections />
-
-      {/* Key Pathways Section */}
-      <section className="border-t border-stone-200 py-20">
-        <div className="section-container">
-          <div className="max-w-3xl">
-            <h2 className="font-display text-2xl text-ink sm:text-3xl">
-              Key Molecular Pathways
-            </h2>
-            <p className="mt-4 text-stone-600">
-              IP6 and Inositol modulate critical intracellular regulators and
-              signaling pathways involved in cell growth, differentiation, and
-              survival.
-            </p>
-          </div>
-          <PathwayBadges />
-        </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="border-t border-stone-200 py-20">
-        <div className="section-container">
-          <div className="max-w-2xl">
-            <h2 className="font-display text-2xl text-ink sm:text-3xl">
-              The Researcher Behind the Discoveries
-            </h2>
-            <p className="mt-4 text-stone-600">
-              Learn about Professor AbulKalam M. Shamsuddin and his pioneering
-              work that brought IP6 &amp; Inositol research to the forefront of
-              modern science.
-            </p>
-            <Link
-              href="/scientist"
-              className="mt-8 inline-block font-sans text-sm font-semibold uppercase tracking-wider text-accent transition-colors hover:text-ink"
-            >
-              Meet the Scientist &rarr;
-            </Link>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
-}
+import type {Metadata} from "next";
+import {PageHero,ArticleNav,Sections,References,Figures,EvidenceNote} from "@/components/ResearchPage";
+import data from "../../../content/research.json";
+export const metadata:Metadata={title:"The science",description:"Investigate the molecular mechanisms of IP6 and inositol: antioxidant chemistry, cell differentiation, signaling, angiogenesis, and epigenetics."};
+export default function Science(){return <><PageHero dark eyebrow="The science" title="Understanding life at the molecular level." description="Explore the mechanisms studied in IP6 and inositol research, from iron-binding chemistry to the regulation of cellular behavior."/><div className="wrap article-layout"><ArticleNav sections={data.science} extra={[["figures","Research figures"]]}/><div><EvidenceNote/><Sections sections={data.science}/><a className="button" href="https://pubmed.ncbi.nlm.nih.gov/?term=inositol+hexaphosphate" target="_blank" rel="noopener noreferrer" style={{marginBottom:40}}>Explore IP6 on PubMed ↗</a><Figures items={[
+["41621582_scaled_352x256.jpg","Antioxidant chemistry figure from the original Science page."],
+["41488084_scaled_384x288.jpg","Experimental cell growth figure from the original Science page."],
+["41488085_scaled_384x288.jpg","Cell morphology and differentiation figure from the original Science page."],
+["41521094_scaled_384x288.jpg","Breast cancer cell experiment, including lactalbumin measurements."],
+["41526241_scaled_383x230.jpg","Overview of biological mechanisms in the original research collection."],
+["41489178_scaled_384x288.jpg","Cell signaling illustration from the original Science page."],
+["41488312_scaled_512x384.jpg","Molecular pathways figure from the original Science page."]
+]}/><References source="The_Science.html"/></div></div></>}

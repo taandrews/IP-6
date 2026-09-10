@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <section className="wrap not-found"><p className="eyebrow">Page not found</p><h1>Let’s get you<br/>back to the science.</h1><p>The page you requested may have moved. Explore the research collection from the homepage.</p><Link className="button" href="/">Return home →</Link></section>}
