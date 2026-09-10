@@ -4,7 +4,7 @@ import Link from "next/link";
 import {asset} from "@/lib/site";
 import {usePathname} from "next/navigation";
 import {ArrowUpRight,Menu,X} from "lucide-react";
-const links=[["About us","/about"],["The science","/science"],["Research areas","/benefits"],["Our scientist","/scientist"],["Insights","/news"],["FAQ","/faq"]];
+const links=[["About Us","/about"],["The Science","/science"],["Research Areas","/benefits"],["Our Scientist","/scientist"],["Insights","/news"],["FAQ","/faq"]];
 export default function Navbar(){
  const [open,setOpen]=useState(false);const pathname=usePathname();
  useEffect(()=>{setOpen(false)},[pathname]);
