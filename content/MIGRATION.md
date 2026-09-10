@@ -30,7 +30,7 @@ All eight main pages were downloaded into `source/`, with both original HTML and
 
 ## Source limitations
 
-The external host `builder.sitearchitect.com` did not return the CT image `wsp02a7b_CTofLiverMet.jpg` or dental figure `wsp02a7b_ToothProtection.jpg`, including on a retry outside the network sandbox. Their surrounding research descriptions and references are preserved. No replacement scientific data images were fabricated. The hero is explicitly labeled conceptual visualization.
+The external host `builder.sitearchitect.com` did not return the CT image `wsp02a7b_CTofLiverMet.jpg` or dental figure `wsp02a7b_ToothProtection.jpg`, including on a retry outside the network sandbox. Their surrounding research descriptions and references are preserved. No replacement scientific data images were fabricated. The corrected hero uses the existing IP6 molecular model, with a phytic acid formula and atom color key; the conceptual cell image is no longer rendered.
 
 ## Delivery
 
@@ -42,4 +42,4 @@ The contact form prepares a mailto draft and retains entered text. It does not f
 
 Run the production build and `node scripts/verify-export.mjs` with matching deployment environment variables. The export check covers the eight content pages, internal links, local files, section anchors, titles, descriptions, h1 count, excluded content, original file sizes, and PDF signatures. A production build includes Next.js type checks.
 
-The in-app browser preview capability was unavailable. No browser interaction or screenshot QA was performed in this session.
+Playwright visual review was added after the initial delivery. Desktop and mobile screenshots are saved under `tmp/qa/`. The portrait is displayed at its original 250 by 320 dimensions without cropping or enlargement. Run `npm install --prefix tmp/visual-qa --no-save --package-lock=false --ignore-scripts playwright`, then `node scripts/visual-review.mjs https://taandrews.github.io/IP-6/ review`. The script checks all eight routes at four viewport widths, image loading, horizontal overflow, browser errors, mobile navigation, FAQ expansion, and contact required fields.
