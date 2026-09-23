@@ -40,18 +40,22 @@ const papers = [
 
 export default function HomePage() {
   return <div className="research-home">
-    <section className="research-introduction wrap" aria-labelledby="home-title">
+    <section className="research-hero" aria-labelledby="home-title">
+     <div className="research-introduction wrap">
       <div className="introduction-copy">
         <p className="eyebrow">IP6 research since 1985</p>
-        <h1 id="home-title"><span>Advancing the science of</span><span className="hero-subject">IP6 &amp; inositol.</span></h1>
-        <p className="introduction-lede">Investigating inositol hexaphosphate and inositol, from molecular mechanisms to experimental and human studies.</p>
-        <a className="button hero-research-link" href="#topics">Explore the research <ArrowRight size={18}/></a>
+        <h1 id="home-title"><span>The science of</span><span className="hero-subject">IP6 &amp; inositol.</span></h1>
       </div>
       <figure className="hero-molecule">
         <HeroMolecule/>
         <figcaption><strong>IP6</strong><span>Inositol hexaphosphate</span><span className="chemical-formula">C<sub>6</sub>H<sub>18</sub>O<sub>24</sub>P<sub>6</sub></span></figcaption>
         <div className="atom-key" aria-label="Atom colors"><span><i className="carbon"/>C</span><span><i className="hydrogen"/>H</span><span><i className="oxygen"/>O</span><span><i className="phosphorus"/>P</span></div>
       </figure>
+      <div className="hero-overview">
+        <p className="introduction-lede">Investigating inositol hexaphosphate and inositol, from molecular mechanisms to experimental and human studies.</p>
+        <a className="button hero-research-link" href="#topics">Explore the research <ArrowRight size={18}/></a>
+      </div>
+     </div>
     </section>
     <nav className="research-jump-nav wrap" aria-label="Research collection"><a href="#topics">Research topics</a><a href="#papers">Selected papers</a><a href="#background">Scientific background</a></nav>
 
