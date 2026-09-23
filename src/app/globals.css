@@ -44,20 +44,20 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
 
 /* A literature-oriented home page: topic index, citations, and scientific context. */
 /* Image-led research opening with a separately presented molecular model. */
-.research-hero{position:relative;isolation:isolate;background:#171c1e;color:#f7f6f1;overflow:hidden}
-.hero-animation{position:absolute;inset:0 0 0 42%;z-index:-1;background:radial-gradient(ellipse at 55% 48%,#39413b 0%,#242b29 35%,#171c1e 72%)}
+.research-hero{position:relative;isolation:isolate;background:#fff;color:var(--ink);overflow:hidden}
+.hero-animation{position:absolute;inset:0 0 0 42%;z-index:-1;background:transparent}
 .hero-animation .hero-molecule-stage{height:100%;width:100%}
 .research-introduction{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:590px;padding-block:60px}
-.introduction-copy .eyebrow{color:#d4dcd7;font-size:.68rem;letter-spacing:.16em}
+.introduction-copy .eyebrow{color:var(--muted);font-size:.68rem;letter-spacing:.16em}
 .introduction-copy h1{font-family:Georgia,Times New Roman,serif;font-weight:400;font-size:clamp(4rem,7.6vw,7rem);line-height:.98;letter-spacing:-.055em;margin:30px 0 28px}
-.introduction-copy h1 span{display:block;color:#e7c68c;white-space:nowrap}
-.introduction-lede{font-size:1.05rem;line-height:1.75;color:#e4e8e4;max-width:420px}
+.introduction-copy h1 span{display:block;color:var(--gold-deep);white-space:nowrap}
+.introduction-lede{font-size:1.05rem;line-height:1.75;color:var(--muted);max-width:420px}
 .hero-overview{margin-top:28px}
-.hero-research-link{background:#f4f1e8;border-color:#f4f1e8;color:#141819;border-radius:0}
-.hero-research-link:hover{background:#e7c68c;border-color:#e7c68c}
-.hero-foundation{display:flex;justify-content:space-between;gap:20px;padding-block:20px;font-size:.68rem;color:#d0d7d1}
+.hero-research-link{background:var(--navy);border-color:var(--navy);color:#fff;border-radius:0}
+.hero-research-link:hover{background:#224760;border-color:#224760}
+.hero-foundation{display:flex;justify-content:space-between;gap:20px;padding-block:20px;font-size:.68rem;color:var(--muted)}
 .hero-photo-credit{text-align:right;line-height:1.7}.hero-photo-credit a{text-decoration:underline;text-underline-offset:3px}
-.hero-foundation>span:first-child{text-transform:uppercase;letter-spacing:.1em;color:#e7c68c}
+.hero-foundation>span:first-child{text-transform:uppercase;letter-spacing:.1em;color:var(--gold-deep)}
 .research-reference-column .hero-molecule{margin-block:20px 24px}
 .research-reference-column .hero-molecule-stage{height:240px}
 .hero-molecule{min-width:0;margin:0;padding:0;border:0;background:transparent}
@@ -188,18 +188,18 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
 .form-notice{margin-top:18px;font-size:.82rem;color:var(--muted)}
 .not-found{min-height:60vh;padding-block:100px}.not-found p{margin:24px 0}
 
-.site-footer{background:#0b2338;color:white;padding:52px 0 24px}
+.site-footer{background:#faf9f6;color:var(--ink);border-top:1px solid var(--line);padding:52px 0 24px}
 .footer-top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:64px;margin-bottom:36px}
 .site-footer .brand-logo{background:white;padding:3px}
-.site-footer .brand-wordmark>span{color:#b8c9d7}
-.footer-top p{font-size:.9rem;color:#b8c9d7;margin-top:22px;max-width:300px}
-.footer-heading{font:600 .75rem/1.5 var(--font-sans);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;color:#d5bd8b}
+.site-footer .brand-wordmark>span{color:var(--muted)}
+.footer-top p{font-size:.9rem;color:var(--muted);margin-top:22px;max-width:300px}
+.footer-heading{font:600 .75rem/1.5 var(--font-sans);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;color:var(--gold-deep)}
 .footer-links{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;font-size:.85rem}
-.footer-address{font-size:.85rem;color:#c3d1db;line-height:1.8}
+.footer-address{font-size:.85rem;color:var(--muted);line-height:1.8}
 .footer-address a{display:inline-block;margin-bottom:5px}
-.footer-links a:hover,.footer-address a:hover{color:#d5bd8b}
-.disclaimer{border-top:1px solid #ffffff24;padding-top:24px;color:#b8c9d7;font-size:.78rem;line-height:1.7}
-.footer-bottom{display:flex;justify-content:space-between;gap:24px;color:#b8c9d7;font-size:.72rem;margin-top:24px}
+.footer-links a:hover,.footer-address a:hover{color:var(--gold-deep)}
+.disclaimer{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:.78rem;line-height:1.7}
+.footer-bottom{display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:.72rem;margin-top:24px}
 
 @media(max-width:1150px){
   .wrap,.section-container{width:calc(100% - 64px)}
@@ -233,7 +233,7 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
   .site-header{height:68px}.brand-logo{width:58px;height:42px}.brand-wordmark strong{font-size:16px}
   .brand{gap:10px}.brand-wordmark>span{font-size:9px}
   .mobile-nav{top:68px;padding:10px 20px 24px;max-height:calc(100dvh - 68px)}
-  .hero-animation{inset:0 0 auto;height:340px;background:radial-gradient(ellipse at 50% 45%,#39413b 0%,#242b29 35%,#171c1e 73%)}
+  .hero-animation{inset:0 0 auto;height:340px;background:transparent}
   .research-introduction{min-height:0;padding:340px 0 28px}
   .introduction-copy .eyebrow{font-size:.6rem;letter-spacing:.12em}
   .introduction-copy h1{font-size:clamp(3rem,13vw,4.5rem);line-height:.98;margin:18px 0 20px}
