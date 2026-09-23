@@ -41,25 +41,19 @@ const papers = [
 export default function HomePage() {
   return <div className="research-home">
     <section className="research-hero" aria-labelledby="home-title">
+      <img className="research-hero-image" src={asset("/images/research-laboratory-hero.webp")} alt="Illustration of a research microscope and cell-culture plate in a laboratory" width="1536" height="1024" fetchPriority="high"/>
       <div className="research-introduction wrap">
         <div className="introduction-copy">
           <p className="eyebrow">Molecular science. Published evidence.</p>
           <h1 id="home-title">IP6 <span>&amp; inositol.</span></h1>
           <p className="introduction-lede">Molecular mechanisms, experimental findings, and human studies. Explore the science of IP6 and inositol.</p>
         </div>
-        <figure className="hero-molecule">
-          <div className="molecular-plate">
-            <span className="plate-formula" aria-hidden="true">C<sub>6</sub>H<sub>18</sub>O<sub>24</sub>P<sub>6</sub></span>
-            <HeroMolecule/>
-            <span className="plate-label" aria-hidden="true">Inositol hexaphosphate</span>
-          </div>
-          <figcaption><span>IP6 / Three-dimensional molecular structure</span><a href="https://www.rcsb.org/ligand/IHP" target="_blank" rel="noopener noreferrer">Structural data <ArrowUpRight size={13}/></a></figcaption>
-        </figure>
+
         <div className="hero-overview">
           <a className="button hero-research-link" href="#papers">Explore the research <ArrowRight size={18}/></a>
         </div>
       </div>
-      <div className="hero-foundation wrap"><span>IP6 research since 1985</span><span>Molecular biology <i/> Experimental studies <i/> Clinical investigations</span></div>
+      <div className="hero-foundation wrap"><span>IP6 research since 1985</span><span>Laboratory illustration</span></div>
     </section>
     <nav className="research-jump-nav wrap" aria-label="Research collection"><a href="#topics">Research topics</a><a href="#papers">Selected papers</a><a href="#background">Scientific background</a></nav>
 
@@ -84,7 +78,8 @@ export default function HomePage() {
         </section>
       </div>
       <aside className="research-reference-column" aria-label="Scientific context">
-        <section className="reference-block" id="background"><h2>About the molecule</h2><p>IP6 is an inositol ring carrying six phosphate groups. It belongs to a family of inositol phosphates studied in cellular signaling and mineral-binding chemistry.</p><dl className="molecule-definitions"><div><dt>Also known as</dt><dd>InsP6; inositol hexakisphosphate; phytic acid</dd></div><div><dt>Related molecule</dt><dd>Myo-inositol</dd></div></dl><Link href="/science">Molecular mechanisms <ArrowRight size={16}/></Link></section>
+        <section className="reference-block" id="background"><h2>About the molecule</h2>
+          <figure className="hero-molecule"><HeroMolecule/><figcaption>IP6 &middot; Inositol hexaphosphate</figcaption></figure><p>IP6 is an inositol ring carrying six phosphate groups. It belongs to a family of inositol phosphates studied in cellular signaling and mineral-binding chemistry.</p><dl className="molecule-definitions"><div><dt>Also known as</dt><dd>InsP6; inositol hexakisphosphate; phytic acid</dd></div><div><dt>Related molecule</dt><dd>Myo-inositol</dd></div></dl><Link href="/science">Molecular mechanisms <ArrowRight size={16}/></Link></section>
         <section className="reference-block"><h2>Reading the evidence</h2><p>Cell studies examine mechanisms. Animal studies test effects in biological systems. Human studies address clinical questions.</p><p>These forms of evidence answer different questions. Formulation, study design, and sample size matter when interpreting a result.</p><Link href="/faq">Research questions &amp; answers <ArrowRight size={16}/></Link></section>
         <section className="reference-block research-founder"><h2>Research origins</h2><div className="founder-reference"><img src={asset("/source/119434971.jpg")} alt="Professor AbulKalam M. Shamsuddin" width="250" height="320" loading="lazy"/><div><h3>AbulKalam M. Shamsuddin</h3><p>M.B., B.S., PhD</p></div></div><p>Shamsuddin began investigating IP6 and inositol at the University of Maryland School of Medicine in 1985.</p><Link href="/scientist">Scientific biography <ArrowRight size={16}/></Link></section>
       </aside>
