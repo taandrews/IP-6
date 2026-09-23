@@ -1,12 +1,15 @@
 import Link from "next/link";
+import ArticleContents from "@/components/ArticleContents";
 import {ArrowUpRight,FileText} from "lucide-react";
 import {asset} from "@/lib/site";
 import inventory from "../../content/source/inventory.json";
 export type Section={id:string;title:string;label?:string;paragraphs:string[];refs?:string[]};
-export function PageHero({eyebrow,title,description,dark=false}:{eyebrow:string;title:string;description:string;dark?:boolean}){return <section className={`page-hero ${dark?"dark":""}`}><div className="wrap"><div className="breadcrumbs"><Link href="/">Home</Link><span>/</span><span>{eyebrow}</span></div><p className="eyebrow">{eyebrow}</p><h1>{title}</h1><p className="lede">{description}</p></div></section>}
+export function PageHero({eyebrow,title,description,dark=false}:{eyebrow:string;title:string;description:string;dark?:boolean}){return <section className={`page-hero ${dark?"dark":""}`}><div className="wrap"><div className="breadcrumbs"><Link href="/">Home</Link><span>/</span><span>{eyebrow}</span></div><p className="eyebrow">{eyebrow}</p><h1>{title.replace(/IP-6/g,"IP\u20116")}</h1><p className="lede">{description}</p></div></section>}
 export function EvidenceNote(){return <aside className="evidence-note"><strong>Understanding the evidence</strong>Much of this research comes from cell cultures and animal models. Early clinical observations can guide further investigation, but do not establish disease prevention or treatment. Follow each reference for the study design and its limitations.</aside>}
 export function Sections({sections}:{sections:Section[]}){return <>{sections.map(s=><section className="article-section" id={s.id} key={s.id}>{s.label&&<span className="tag">{s.label}</span>}<h2>{s.title}</h2>{s.paragraphs.map((p,i)=><p key={i}>{p}</p>)}{s.refs&&<div className="inline-refs">{s.refs.map(id=><a key={id} href={`https://pubmed.ncbi.nlm.nih.gov/${id}/`} target="_blank" rel="noopener noreferrer">PubMed · {id} ↗</a>)}</div>}</section>)}</>}
-export function ArticleNav({sections,extra=[]}:{sections:Section[];extra?:[string,string][]}){return <nav className="article-nav" aria-label="On this page"><p>On this page</p>{sections.map(s=><a href={`#${s.id}`} key={s.id}>{s.title}</a>)}{extra.map(([id,label])=><a href={`#${id}`} key={id}>{label}</a>)}<a href="#references">Sources & references</a></nav>}
+export function ArticleNav({sections,extra=[]}:{sections:Section[];extra?:[string,string][]}){
+ return <ArticleContents links={[...sections.map(s=>({id:s.id,title:s.title})),...extra.map(([id,title])=>({id,title})),{id:"references",title:"Sources & references"}]}/>;
+}
 const labels:Record<string,string>={
 "20191364":"Low-phytate crops and genetic engineering","20335626":"Low-phytate maize, zinc, and infant growth","22093370":"Low-phytic-acid crop research",
 "9891450":"IP6 in experimental human liver cancer","16124063":"IP6 and natural killer cell activity","20127021":"IP6 and inositol in colorectal carcinoma cell lines",
