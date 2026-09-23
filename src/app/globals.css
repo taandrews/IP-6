@@ -43,20 +43,24 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
 .mobile-nav a[aria-current=page]{color:var(--gold-deep);font-weight:600}
 
 /* A literature-oriented home page: topic index, citations, and scientific context. */
-.research-hero{background:#102c45;color:#fff;border-bottom:3px solid var(--gold)}
-.research-introduction{display:grid;grid-template-columns:1.1fr 1fr;column-gap:64px;row-gap:24px;align-items:center;padding-block:64px 60px}
-.introduction-copy{align-self:end}
-.hero-overview{grid-column:1;grid-row:2;align-self:start}
-.research-hero .hero-molecule{grid-column:2;grid-row:1 / 3}
-.research-hero .hero-molecule figcaption,.research-hero .atom-key{color:#bdcbd6}
-.research-hero .hero-molecule figcaption strong,.research-hero .hero-molecule .chemical-formula{color:#fff}
-.introduction-copy h1{font-family:Georgia,Times New Roman,serif;font-size:clamp(3rem,5.2vw,4.7rem);line-height:1.08;letter-spacing:-.04em;margin:22px 0 0;font-weight:400;max-width:660px}
+/* The microscopy image is distinct from the molecular model below. */
+.research-hero{position:relative;isolation:isolate;overflow:hidden;background:#080e0d;color:#fff}
+.research-hero-image{position:absolute;inset:0;z-index:-2}
+.research-hero-image img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.research-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#080e0d 8%,rgba(8,14,13,.96) 29%,rgba(8,14,13,.63) 49%,rgba(8,14,13,.05) 78%),linear-gradient(0deg,rgba(8,14,13,.8),transparent 28%)}
+.research-introduction{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:540px;padding-block:64px 72px}
+.introduction-copy h1{font-family:Georgia,Times New Roman,serif;font-size:clamp(3rem,5.2vw,4.7rem);line-height:1.08;letter-spacing:-.04em;margin:22px 0 24px;font-weight:400;max-width:660px}
 .introduction-copy h1>span{display:block}
 .introduction-copy .hero-subject{color:#e4c48d;white-space:nowrap}
 .introduction-copy>.eyebrow{color:#e4c48d}
-.hero-research-link{margin-top:24px;background:#e4c48d;border-color:#e4c48d;color:#102c45}
-.hero-research-link:hover{background:#f1d8ac}
-.introduction-lede{font-size:1.05rem;line-height:1.75;max-width:470px;color:#d2dde6}
+.hero-research-link{margin-top:26px;background:#fff;border-color:#fff;color:#102c45}
+.hero-research-link:hover{background:#e4c48d;border-color:#e4c48d}
+.introduction-lede{font-size:1.05rem;line-height:1.75;max-width:440px;color:#e0e7e4}
+.hero-image-credit{position:relative;padding-bottom:18px;text-align:right;font-size:.68rem;line-height:1.6;color:#d2dbd5}
+.hero-image-credit a{text-decoration:underline;text-underline-offset:3px}
+.research-reference-column .hero-molecule{margin:20px 0 24px}
+.research-reference-column .hero-molecule-stage{height:240px}
+.research-reference-column .hero-molecule figcaption{font-size:.68rem;gap:5px}
 .hero-molecule{min-width:0;margin:0;padding:0;border:0;background:transparent}
 .hero-molecule-stage{position:relative;width:100%;height:400px;background:transparent}
 .hero-molecule-stage>img,.hero-molecule-stage>canvas{display:block;width:100%;height:100%;object-fit:contain}
@@ -202,7 +206,6 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
   .wrap,.section-container{width:calc(100% - 64px)}
   .desktop-nav{gap:16px}.desktop-nav a{font-size:.75rem}
   .brand-wordmark strong{font-size:15px}.brand-logo{width:64px}.header-contact{display:none}
-  .research-introduction{column-gap:36px;grid-template-columns:1.1fr 1fr}
   .hero-molecule-stage{height:350px}
   .research-reading-grid{gap:36px;grid-template-columns:minmax(0,1fr) 240px}
   .research-reference-column{padding-left:22px}
@@ -231,12 +234,15 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
   .site-header{height:68px}.brand-logo{width:58px;height:42px}.brand-wordmark strong{font-size:16px}
   .brand{gap:10px}.brand-wordmark>span{font-size:9px}
   .mobile-nav{top:68px;padding:10px 20px 24px;max-height:calc(100dvh - 68px)}
-  .research-introduction{grid-template-columns:1fr;gap:0;padding:30px 0 32px}
-  .research-hero .hero-molecule{grid-column:1;grid-row:2;margin-block:8px 20px}
-  .hero-overview{grid-column:1;grid-row:3}
-  .introduction-copy h1{font-size:clamp(2.1rem,10.3vw,3.4rem);line-height:1.08;margin:14px 0 0;letter-spacing:-.04em}
+  .research-hero-image{inset:0 0 auto;height:330px}
+  .research-hero-image img{object-position:center 38%}
+  .research-hero::before{background:linear-gradient(0deg,#080e0d 0%,#080e0d 39%,rgba(8,14,13,.75) 60%,rgba(8,14,13,.08) 92%)}
+  .research-introduction{min-height:0;padding:224px 0 24px}
+  .introduction-copy h1{font-size:clamp(2.1rem,10.3vw,3.4rem);line-height:1.08;margin:14px 0 18px;letter-spacing:-.04em}
   .introduction-lede{font-size:1rem;line-height:1.65;max-width:38ch}
-  .hero-research-link{margin-top:20px;min-height:48px;font-size:.88rem;padding-inline:20px;width:100%;justify-content:space-between}
+  .hero-research-link{margin-top:22px;min-height:48px;font-size:.88rem;padding-inline:20px;width:100%;justify-content:space-between}
+  .hero-overview{width:100%}
+  .hero-image-credit{text-align:left;font-size:.68rem;padding-bottom:18px}
   .hero-molecule{display:block;border:0;background:transparent;padding:0;width:100%;max-width:430px;justify-self:center}
   .hero-molecule-stage{height:230px}
   .hero-molecule figcaption{display:flex;flex-direction:row;align-items:baseline;justify-content:center;gap:8px;font-size:.72rem;line-height:1.5}
