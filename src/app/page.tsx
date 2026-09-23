@@ -3,74 +3,84 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import HeroMolecule from "@/components/HeroMolecule";
 import { asset } from "@/lib/site";
 
-const research = [
-  ["Molecular mechanisms", "Cell signaling, antioxidant chemistry, and the biology of inositol phosphates.", "/science"],
-  ["Cancer biology & immunity", "Cell growth, differentiation, and immune activity in experimental models.", "/about#oncology"],
-  ["Cardiovascular & metabolic research", "Investigations into mineral deposition, platelet function, and glucose metabolism.", "/benefits#cardiovascular"],
-  ["Neuroscience & cellular protection", "Research into oxidative stress, neurodegeneration, and cellular responses to injury.", "/benefits#neuroscience"],
+const topics = [
+  ["Molecular mechanisms", "Iron binding, cell signaling, differentiation, and epigenetic regulation.", "/science"],
+  ["Cancer biology", "Proliferation, apoptosis, and tumor development in experimental models.", "/about#oncology"],
+  ["Clinical investigations", "Human studies, study design, and the limits of the available evidence.", "/about#clinical"],
+  ["Immunology", "Natural killer cell activity and experimental immune responses.", "/about#immunity"],
+  ["Metabolism & mineral biology", "Glucose metabolism, mineral crystallization, and cardiovascular research.", "/benefits"],
+  ["Neuroscience", "Oxidative stress and neuroprotection in preclinical models.", "/benefits#neuroscience"],
 ];
-const publications = [
-  { type: "Clinical pilot", year: "2010", title: "IP6 + inositol during breast cancer chemotherapy", description: "A randomized pilot study examining quality of life and treatment-related side effects.", href: "/news#clinical" },
-  { type: "Scientific reference", year: "2015", title: "Inositol & its Phosphates", description: "A multidisciplinary reference connecting basic science with practical applications.", href: "/news#books" },
-  { type: "Molecular research", year: "", title: "A new family of IP6 citrate compounds", description: "The chemistry, proposed applications, and patent history of IP6cit.", href: "/news#citrate" },
+const papers = [
+  {
+    pmid: "20152024", type: "Human study", year: "2010",
+    title: "IP6 + inositol during breast cancer chemotherapy",
+    citation: "Bacic I, et al. Journal of Experimental & Clinical Cancer Research. 2010;29:12.",
+    design: "Randomized, placebo-controlled pilot study; 14 participants.",
+    summary: "The investigators reported differences in quality of life, functional status, and blood-count outcomes during chemotherapy. The small sample limits the conclusions.",
+    doi: "10.1186/1756-9966-29-12", fullText: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2829500/",
+  },
+  {
+    pmid: "20127021", type: "Cell study", year: "2010",
+    title: "Proliferation and apoptosis in colorectal cancer cell lines",
+    citation: "Schroterova L, et al. Oncology Reports. 2010;23(3):787-793.",
+    design: "Human colorectal carcinoma cell lines: HT-29, SW-480, and SW-620.",
+    summary: "IP6 and inositol were studied individually and in combination. Effects varied with concentration and cell line; inositol enhanced apoptosis-related activity with IP6 in the tested models.",
+    doi: "", fullText: "",
+  },
+  {
+    pmid: "2752519", type: "Animal study", year: "1989",
+    title: "Inositol phosphates and tumor formation in CD-1 mice",
+    citation: "Shamsuddin AM, Ullah A, Chakravarthy AK. Carcinogenesis. 1989;10(8):1461-1463.",
+    design: "Experimental study in CD-1 mice.",
+    summary: "An early University of Maryland investigation of inositol and IP6 in cell proliferation and tumor formation. Animal experiments provide biological evidence; they do not establish efficacy in people.",
+    doi: "10.1093/carcin/10.8.1461", fullText: "",
+  },
 ];
 
 export default function HomePage() {
-  return <div className="home-page">
-    <section className="hero">
-      <div className="wrap hero-content">
-        <div className="hero-copy">
-          <p className="eyebrow">Scientific inquiry since 1985</p>
-          <h1>The science of <span>IP6 &amp; inositol.</span></h1>
-          <p className="hero-description">Investigating naturally occurring molecules and their roles in human biology. Bringing decades of IP6 research into focus.</p>
-          <Link href="/science" className="button">Explore the science <ArrowRight size={18}/></Link>
-        </div>
-        <figure className="hero-molecule">
-          <HeroMolecule/>
-          <figcaption>
-            <div><strong>IP6</strong><span>Inositol hexaphosphate</span></div>
-            <span className="chemical-formula">C<sub>6</sub>H<sub>18</sub>O<sub>24</sub>P<sub>6</sub></span>
-          </figcaption>
-          <div className="atom-key" aria-label="Atom colors">
-            <span><i className="carbon"/>Carbon</span><span><i className="hydrogen"/>Hydrogen</span><span><i className="oxygen"/>Oxygen</span><span><i className="phosphorus"/>Phosphorus</span>
-          </div>
-        </figure>
+  return <div className="research-home">
+    <section className="research-introduction wrap" aria-labelledby="home-title">
+      <div className="introduction-copy">
+        <p className="eyebrow">IP-6 Research Incorporated</p>
+        <h1 id="home-title">IP6 &amp; inositol research</h1>
+        <p className="introduction-lede">Molecular biology, experimental findings, and human studies of inositol hexaphosphate and inositol.</p>
+        <p className="collection-description">A research collection tracing investigations initiated by Professor AbulKalam M. Shamsuddin in 1985, with links to the scientific literature.</p>
       </div>
+      <figure className="hero-molecule">
+        <HeroMolecule/>
+        <figcaption><strong>IP6</strong><span>Inositol hexaphosphate</span><span className="chemical-formula">C<sub>6</sub>H<sub>18</sub>O<sub>24</sub>P<sub>6</sub></span></figcaption>
+        <div className="atom-key" aria-label="Atom colors"><span><i className="carbon"/>C</span><span><i className="hydrogen"/>H</span><span><i className="oxygen"/>O</span><span><i className="phosphorus"/>P</span></div>
+      </figure>
     </section>
+    <nav className="research-jump-nav wrap" aria-label="Research collection"><a href="#topics">Research topics</a><a href="#papers">Selected papers</a><a href="#background">Scientific background</a></nav>
 
-    <section className="research-section section" aria-labelledby="research-heading">
-      <div className="wrap">
-        <div className="section-heading">
-          <div><p className="eyebrow">Research areas</p><h2 id="research-heading">Areas of investigation.</h2></div>
-          <p>Explore the mechanisms and experimental evidence shaping our understanding of IP6 and inositol.</p>
-        </div>
-        <div className="research-rows">{research.map(([title, description, href]) =>
-          <Link href={href} key={title} className="research-row"><div><h3>{title}</h3><p>{description}</p></div><ArrowRight size={22}/></Link>
-        )}</div>
-        <div className="research-foot"><p>The evidence spans laboratory and animal studies, with limited human clinical data.</p><Link href="/benefits" className="text-link">All research areas <ArrowRight size={18}/></Link></div>
+    <div className="wrap research-reading-grid">
+      <div className="research-main-column">
+        <section className="topic-index" id="topics" aria-labelledby="topics-title">
+          <div className="index-heading"><h2 id="topics-title">Research topics</h2><Link href="/benefits">All topics <ArrowRight size={16}/></Link></div>
+          <div className="topic-list">{topics.map(([title, description, href]) => <Link href={href} className="topic-entry" key={title}><div><h3>{title}</h3><p>{description}</p></div><ArrowRight size={18}/></Link>)}</div>
+        </section>
+        <section className="primary-literature" id="papers" aria-labelledby="papers-title">
+          <div className="index-heading"><h2 id="papers-title">Selected primary literature</h2></div>
+          <p className="section-description">Studies from the research collection. Publication dates refer to the original papers.</p>
+          <div className="paper-list">{papers.map(paper => <article className="paper-record" key={paper.pmid}>
+            <div className="paper-classification"><span>{paper.type}</span><span>{paper.year}</span><span>PMID: {paper.pmid}</span></div>
+            <h3><a href={`https://pubmed.ncbi.nlm.nih.gov/${paper.pmid}/`} target="_blank" rel="noopener noreferrer">{paper.title}</a></h3>
+            <p className="paper-citation">{paper.citation}</p>
+            <p className="paper-design"><strong>Study design</strong> {paper.design}</p>
+            <p className="paper-summary">{paper.summary}</p>
+            <div className="paper-links"><a href={`https://pubmed.ncbi.nlm.nih.gov/${paper.pmid}/`} target="_blank" rel="noopener noreferrer">PubMed abstract <ArrowUpRight size={15}/></a>{paper.fullText && <a href={paper.fullText} target="_blank" rel="noopener noreferrer">Full text <ArrowUpRight size={15}/></a>}{paper.doi && <a href={`https://doi.org/${paper.doi}`} target="_blank" rel="noopener noreferrer">DOI <ArrowUpRight size={15}/></a>}</div>
+          </article>)}</div>
+          <div className="literature-more"><Link href="/news">Explore the research archive <ArrowRight size={17}/></Link><a href="https://pubmed.ncbi.nlm.nih.gov/?term=inositol+hexaphosphate" target="_blank" rel="noopener noreferrer">Find further literature on PubMed <ArrowUpRight size={16}/></a></div>
+        </section>
       </div>
-    </section>
-
-    <section className="section publications-section" aria-labelledby="publications-heading">
-      <div className="wrap">
-        <div className="section-heading"><div><p className="eyebrow">From the literature</p><h2 id="publications-heading">Selected publications.</h2></div><Link href="/news" className="text-link">Research archive <ArrowRight size={18}/></Link></div>
-        <div className="publication-list">{publications.map(item =>
-          <article className="publication-row" key={item.href}>
-            <p className="publication-meta"><span>{item.type}</span>{item.year && <span>{item.year}</span>}</p>
-            <div><h3><Link href={item.href}>{item.title}</Link></h3><p>{item.description}</p><Link href={item.href} className="publication-link">Read the overview <ArrowUpRight size={16}/></Link></div>
-          </article>
-        )}</div>
-      </div>
-    </section>
-
-    <section className="section origins-section" aria-labelledby="origins-heading">
-      <div className="wrap origins-grid">
-        <div className="origins-heading"><p className="eyebrow">The origins of IP6 research</p><h2 id="origins-heading">A lifetime of<br/>scientific inquiry.</h2></div>
-        <figure className="founder-portrait"><img src={asset("/source/119434971.jpg")} alt="Professor AbulKalam M. Shamsuddin" width="250" height="320" loading="lazy"/></figure>
-        <div className="origins-copy"><div className="founder-identity"><h3>AbulKalam M. Shamsuddin</h3><p className="founder-credentials">M.B., B.S., PhD</p></div><p>In 1985, Professor Shamsuddin began investigating IP6 and inositol at the University of Maryland School of Medicine. His work opened a sustained exploration of their activity in cancer models and cellular systems.</p><Link href="/scientist" className="text-link">Meet the scientist <ArrowRight size={18}/></Link></div>
-      </div>
-    </section>
-
-    <section className="contact-banner"><div className="wrap"><div><p className="eyebrow">Connect with IP-6 Research</p><h2>Continue the inquiry.</h2><p>Questions about the science or a publication? We welcome research inquiries.</p></div><Link href="/contact" className="button">Get in touch <ArrowRight size={18}/></Link></div></section>
+      <aside className="research-reference-column" aria-label="Scientific context">
+        <section className="reference-block" id="background"><h2>About the molecule</h2><p>IP6 is an inositol ring carrying six phosphate groups. It belongs to a family of inositol phosphates studied in cellular signaling and mineral-binding chemistry.</p><dl className="molecule-definitions"><div><dt>Also known as</dt><dd>InsP6; inositol hexakisphosphate; phytic acid</dd></div><div><dt>Related molecule</dt><dd>Myo-inositol</dd></div></dl><Link href="/science">Molecular mechanisms <ArrowRight size={16}/></Link></section>
+        <section className="reference-block"><h2>Reading the evidence</h2><p>Cell studies examine mechanisms. Animal studies test effects in biological systems. Human studies address clinical questions.</p><p>These forms of evidence answer different questions. Formulation, study design, and sample size matter when interpreting a result.</p><Link href="/faq">Research questions &amp; answers <ArrowRight size={16}/></Link></section>
+        <section className="reference-block research-founder"><h2>Research origins</h2><div className="founder-reference"><img src={asset("/source/119434971.jpg")} alt="Professor AbulKalam M. Shamsuddin" width="250" height="320" loading="lazy"/><div><h3>AbulKalam M. Shamsuddin</h3><p>M.B., B.S., PhD</p></div></div><p>Shamsuddin began investigating IP6 and inositol at the University of Maryland School of Medicine in 1985.</p><Link href="/scientist">Scientific biography <ArrowRight size={16}/></Link></section>
+      </aside>
+    </div>
+    <section className="research-contact wrap"><div><h2>Research correspondence</h2><p>For questions about a publication or the research collection.</p></div><Link href="/contact">Contact IP-6 Research <ArrowRight size={18}/></Link></section>
   </div>;
 }
