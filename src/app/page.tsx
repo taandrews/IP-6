@@ -41,7 +41,7 @@ const papers = [
 export default function HomePage() {
   return <div className="research-home">
     <section className="research-hero" aria-labelledby="home-title">
-      <img className="research-hero-image" src={asset("/images/atomic-force-microscope.webp")} alt="Photograph of a researcher placing a sample in an atomic force microscope" width="1920" height="1280" fetchPriority="high"/>
+      <img className="research-hero-image" src={asset("/images/ip6-research-hero.webp")} alt="Molecular illustration of IP6 showing its inositol ring and six phosphate groups" width="1536" height="1024" fetchPriority="high"/>
       <div className="research-introduction wrap">
         <div className="introduction-copy">
           <p className="eyebrow">Molecular science. Published evidence.</p>
@@ -53,7 +53,7 @@ export default function HomePage() {
           <a className="button hero-research-link" href="#papers">Explore the research <ArrowRight size={18}/></a>
         </div>
       </div>
-      <div className="hero-foundation wrap"><span>IP6 research since 1985</span><span className="hero-photo-credit">Atomic force microscope<br/><a href="https://commons.wikimedia.org/wiki/File:AFM_at_work.jpg" target="_blank" rel="noopener noreferrer">Photo: AAMonitor96</a> &middot; <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> &middot; Cropped</span></div>
+      <div className="hero-foundation wrap"><span>IP6 research since 1985</span><span className="hero-photo-credit">IP6 &middot; Molecular illustration</span></div>
     </section>
     <nav className="research-jump-nav wrap" aria-label="Research collection"><a href="#topics">Research topics</a><a href="#papers">Selected papers</a><a href="#background">Scientific background</a></nav>
 
