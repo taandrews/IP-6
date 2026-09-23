@@ -42,10 +42,10 @@ export default function HomePage() {
   return <div className="research-home">
     <section className="research-introduction wrap" aria-labelledby="home-title">
       <div className="introduction-copy">
-        <p className="eyebrow">IP-6 Research Incorporated</p>
-        <h1 id="home-title">IP6 &amp; inositol research</h1>
-        <p className="introduction-lede">Molecular biology, experimental findings, and human studies of inositol hexaphosphate and inositol.</p>
-        <p className="collection-description">A research collection tracing investigations initiated by Professor AbulKalam M. Shamsuddin in 1985, with links to the scientific literature.</p>
+        <p className="eyebrow">IP6 research since 1985</p>
+        <h1 id="home-title"><span>Advancing the science of</span><span className="hero-subject">IP6 &amp; inositol.</span></h1>
+        <p className="introduction-lede">Investigating inositol hexaphosphate and inositol, from molecular mechanisms to experimental and human studies.</p>
+        <a className="button hero-research-link" href="#topics">Explore the research <ArrowRight size={18}/></a>
       </div>
       <figure className="hero-molecule">
         <HeroMolecule/>
