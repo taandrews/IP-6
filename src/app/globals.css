@@ -44,9 +44,9 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
 
 /* A literature-oriented home page: topic index, citations, and scientific context. */
 /* Image-led research opening with a separately presented molecular model. */
-.research-hero{position:relative;isolation:isolate;background:#181512;color:#f7f6f1;overflow:hidden}
-.research-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:right center;z-index:-2}
-.research-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(24,21,18,.95),rgba(24,21,18,.6) 30%,rgba(24,21,18,0) 58%),linear-gradient(0deg,rgba(24,21,18,.65),transparent 18%)}
+.research-hero{position:relative;isolation:isolate;background:#171c1e;color:#f7f6f1;overflow:hidden}
+.hero-animation{position:absolute;inset:0 0 0 42%;z-index:-1;background:radial-gradient(ellipse at 55% 48%,#39413b 0%,#242b29 35%,#171c1e 72%)}
+.hero-animation .hero-molecule-stage{height:100%;width:100%}
 .research-introduction{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:590px;padding-block:60px}
 .introduction-copy .eyebrow{color:#d4dcd7;font-size:.68rem;letter-spacing:.16em}
 .introduction-copy h1{font-family:Georgia,Times New Roman,serif;font-weight:400;font-size:clamp(4rem,7.6vw,7rem);line-height:.98;letter-spacing:-.055em;margin:30px 0 28px}
@@ -233,9 +233,8 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
   .site-header{height:68px}.brand-logo{width:58px;height:42px}.brand-wordmark strong{font-size:16px}
   .brand{gap:10px}.brand-wordmark>span{font-size:9px}
   .mobile-nav{top:68px;padding:10px 20px 24px;max-height:calc(100dvh - 68px)}
-  .research-hero-image{height:370px;object-fit:cover;object-position:84% center}
-  .research-hero::before{background:linear-gradient(0deg,#181512 0%,#181512 43%,rgba(24,21,18,.35) 65%,transparent 86%)}
-  .research-introduction{min-height:0;padding:270px 0 28px}
+  .hero-animation{inset:0 0 auto;height:340px;background:radial-gradient(ellipse at 50% 45%,#39413b 0%,#242b29 35%,#171c1e 73%)}
+  .research-introduction{min-height:0;padding:340px 0 28px}
   .introduction-copy .eyebrow{font-size:.6rem;letter-spacing:.12em}
   .introduction-copy h1{font-size:clamp(3rem,13vw,4.5rem);line-height:.98;margin:18px 0 20px}
   .introduction-lede{font-size:.94rem;line-height:1.65;max-width:38ch}
