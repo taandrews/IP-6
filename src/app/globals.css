@@ -56,6 +56,7 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
 .hero-research-link{background:#f4f1e8;border-color:#f4f1e8;color:#141819;border-radius:0}
 .hero-research-link:hover{background:#e7c68c;border-color:#e7c68c}
 .hero-foundation{display:flex;justify-content:space-between;gap:20px;padding-block:20px;font-size:.68rem;color:#d0d7d1}
+.hero-photo-credit{text-align:right;line-height:1.7}.hero-photo-credit a{text-decoration:underline;text-underline-offset:3px}
 .hero-foundation>span:first-child{text-transform:uppercase;letter-spacing:.1em;color:#e7c68c}
 .research-reference-column .hero-molecule{margin-block:20px 24px}
 .research-reference-column .hero-molecule-stage{height:240px}
@@ -232,7 +233,7 @@ img{max-width:100%;height:auto}svg{flex-shrink:0}section[id],article[id]{scroll-
   .site-header{height:68px}.brand-logo{width:58px;height:42px}.brand-wordmark strong{font-size:16px}
   .brand{gap:10px}.brand-wordmark>span{font-size:9px}
   .mobile-nav{top:68px;padding:10px 20px 24px;max-height:calc(100dvh - 68px)}
-  .research-hero-image{height:370px;object-position:72% center}
+  .research-hero-image{height:370px;object-position:64% center}
   .research-hero::before{background:linear-gradient(0deg,#101514 0%,#101514 43%,rgba(16,21,20,.55) 65%,transparent 86%)}
   .research-introduction{min-height:0;padding:270px 0 28px}
   .introduction-copy .eyebrow{font-size:.6rem;letter-spacing:.12em}
